@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Body{
+    background-color:rgb(210, 255, 255);
+}
+.Header *{
+    color: white;
+}
+.Header{
+    background-color:  rgb( 61, 172, 184);
+    height: 66px;
+    padding: 10px;
+
+}
+.Header-logo{
+    float: left;
+    height: inherit;
+}
+.Header-logo-title{
+    margin: 5px;
+}
+.Header-logo-span{
+    color: rgb(0, 0, 96);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.Header.logo.title{
+    margin: 5px;
+}
+
+.Nav-ul{
+    float: right;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+.Nav-ul-li{
+    float: left;
+
+}
+.Nav-ul-li-a{
+    display: block;
+    padding: 14px 16px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS';
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.Nav-ul-li-a:hover{
+    background-color: rgb(36, 114, 122); 
+    transition: 1s;
+
+    /*height: 100%;
+    width: 100%;*/
+/*El hover no ocupa 100% de su tamaño !? */
+/*Como hacer que el hover sea mas suave ?*/
+}
+
+
+/*-----------------------------------*/
+/*          Media Queries            */
+/*-----------------------------------*/
+
+
+@media only screen and (max-width: 750px){
+    .Nav-ul{
+        width: 100%;
+        background-color: rgb(61, 172, 184);
+    }
+.Nav-ul-li{
+    width: 100%;
+}
+}
