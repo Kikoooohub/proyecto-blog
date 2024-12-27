@@ -7,6 +7,9 @@
     <title>Blog</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -17,15 +20,17 @@
 
         <div class="Header-logo">
             <!--Nombre de pagina dentro de span eituqueta para poner luego estilos al Nombre.-->
-            <h1 class="Header-logo-title"><span class="Header-logo-span">Daily</span>Blog</h1>
+            <h1 class="Header-logo-title"><a href="#" class="Header-logo-span-link"><span
+                        class="Header-logo-span">Daily</span>Blog</a></h1>
         </div>
+
 
 
         <nav class="Nav">
             <ul class="Nav-ul">
                 <li class="Nav-ul-li"><a href="#" class="Nav-ul-li-a">Home</a></li>
                 <li class="Nav-ul-li"><a href="#" class="Nav-ul-li-a">About</a></li>
-                <li class="Nav-ul-li"><a href="#" class="Nav-ul-li-a">Services</a></li>
+                <li class="Nav-ul-li"><a href="#" class="Nav-ul-li-a">FAQ</a></li>
                 <li class="Nav-ul-li"><a href="#" class="Nav-ul-li-a">Contacto</a></li>
 
                 <!--Cuando el user esta logged in no quiere ver sign up and log in.
@@ -35,6 +40,24 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="Main-wrapper">
+
+            <!--Caroussel-->
+            <div class="Main-slider">
+                <h1 class="Main-slider-title">Tredning Posts</h1>
+                <div class="Main-post-wrapper">
+                    <div class="post">1</div>
+                    <div class="post">2</div>
+                    <div class="post">3</div>
+                    <div class="post">4</div>
+                    <div class="post">5</div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
 
 </body>
 
