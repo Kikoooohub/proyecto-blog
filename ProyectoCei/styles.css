@@ -1,4 +1,11 @@
+/*Import Google style -Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+
+
 * {
+    font-family: "Inter", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,6 +23,9 @@
     background-color: rgb(61, 172, 184);
     height: 60px;
     padding: 10px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*hace que el buton de la imagen ,no se vea en el header */
 }
 
 .Header-logo {
@@ -69,32 +79,105 @@
     background-color: rgb(36, 114, 122);
     padding: 9px;
     border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*Aqui se le da el efecto de sombra al hover*/
+}
 
+.Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Main-section{
+;
+}
 
+.Main-section-ul-li {
+    list-style: none;
+}
 
+.Main-section-ul-li-a {
+    width: 27rem;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+    
+    /* No se aplica hover efecto a la imagen ?! */
+    /*transition: 0.4s ease ;*/
+    /*transition: box-shadow 0.3s ease;*/
+/*.Main-section-ul-li-a:hover{
+    border-color:#0b1f1f;
+}*/
 
-    /*height: 100%;
-    width: 100%;*/
-    /*El hover no ocupa 100% de su tamaño !? */
+.Main-section-ul-li-a-img {
+    width: 100%;
+    aspect-ratio: 16/9;/*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
+    border-radius: 10px;
+    object-fit: cover;
 
-    /*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
-
-    /*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
 
 }
+
+.Main-section-ul-li-a-p {
+    color: #0a3a39;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #68D8D6;
+    width: fit-content;
+    border-radius: 50px;
+
+}
+
+.Main-section-ul-li-a-h2 {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.Main-section-ul-li-a-btn {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 3.5px solid #27848f;
+    color:#115b58 ;
+    cursor: pointer;
+    background: none;
+    transform: rotate(-45deg);
+}
+.Main-section-ul-li-a-btn:hover{
+    background-color: #27848f;
+    color: #fff;
+    /*Esto hace que cuando pases el mouse por encima que cambie el color del box de la flecha y  el color de la flecha */
+}
+
+
+
+
+/*height: 100%;
+    width: 100%;*/
+/*El hover no ocupa 100% de su tamaño !? */
+
+/*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
+
+/*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
+
+
 
 /*-----------------------------------*/
 /*         Carroussel slider         */
 /*-----------------------------------*/
 
 
-.Main-wrapper {}
 
-.Main-slider {
-    border: 1px solid red;
-}
 
-.Main-post-wrapper {}
 
 
 
@@ -106,7 +189,7 @@
 /*Existe  un espacio entre el Header y el Nav menu al pasar a menos de 750px */
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
     .Nav-ul {
         width: 100%;
         background-color: rgb(61, 172, 184);
@@ -127,5 +210,27 @@
         text-align: center;
         width: 100%;
 
+    }
+    .Main{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+    }
+}
+    @media screen and (min-widht:600px) and (max-width: 1024px) {
+        .Main-section-ul-li-a {
+            width: 100%;
+            
+
+    
+        
+    }
+
+}
+@media screen and (min-width:1180px) {
+    .Main-section-ul-li-a {
+        width: 30rem;
+        margin: 10px;
     }
 }
