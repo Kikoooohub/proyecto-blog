@@ -13,6 +13,7 @@
 
 .Body {
     background-color: rgb(210, 255, 255);
+
 }
 
 .Header * {
@@ -25,7 +26,8 @@
     padding: 10px 0px;
     position: sticky;
     top: 0;
-    z-index: 1000; /*hace que el buton de la imagen ,no se vea en el header */
+    z-index: 1000;
+    /*hace que el buton de la imagen ,no se vea en el header */
 }
 
 .Header-logo {
@@ -83,22 +85,59 @@
     /*Aqui se le da el efecto de sombra al hover*/
 }
 
-.Main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.Div-h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #0a3a39;
+    font-weight: 800;
+
 }
-.Main-section{
-;
+
+.Div-p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #0a3a39;
+    font-weight: 600;
+}
+
+.Main {
+   /* height: 100vh;*/
+}
+
+
+.Main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    border: 1px solid #ff520e;
+}
+
+.Main-section-ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
 }
 
 .Main-section-ul-li {
+    width: 26rem;
     list-style: none;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
 }
 
 .Main-section-ul-li-a {
-    width: 27rem;
+
     display: block;
     background: #fff;
     padding: 18px;
@@ -106,17 +145,18 @@
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
-    
-    /* No se aplica hover efecto a la imagen ?! */
-    /*transition: 0.4s ease ;*/
-    /*transition: box-shadow 0.3s ease;*/
+
+/* No se aplica hover efecto a la imagen ?! */
+/*transition: 0.4s ease ;*/
+/*transition: box-shadow 0.3s ease;*/
 /*.Main-section-ul-li-a:hover{
     border-color:#0b1f1f;
 }*/
 
 .Main-section-ul-li-a-img {
-    width: 100%;
-    aspect-ratio: 16/9;/*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
     border-radius: 10px;
     object-fit: cover;
 
@@ -147,33 +187,135 @@
     border-radius: 50%;
     margin: 30px 0 5px;
     border: 3.5px solid #27848f;
-    color:#115b58 ;
+    color: #115b58;
     cursor: pointer;
     background: none;
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
 }
-.Main-section-ul-li-a-btn:hover{
+
+.Main-section-ul-li-a-btn:hover {
     background-color: #27848f;
     color: #fff;
     /*Esto hace que cuando pases el mouse por encima que cambie el color del box de la flecha y  el color de la flecha */
+
+    /*height: 100%;
+        width: 100%;*/
+    /*El hover no ocupa 100% de su tamaño !? */
+
+    /*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
+
+    /*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
 }
 
 
 
 
-/*height: 100%;
-    width: 100%;*/
-/*El hover no ocupa 100% de su tamaño !? */
-
-/*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
-
-/*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
-
 
 
 /*-----------------------------------*/
-/*         Carroussel slider         */
+/*            Articulo               */
 /*-----------------------------------*/
+
+.Main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px;
+    border: solid #ff520e;
+}
+.Article-p{
+    font-size: 1.2rem;
+    color: #0e4342;
+    font-weight: 600;
+    margin: 20px;
+    text-align: center;
+}
+
+.Main-article-h2 {
+    font-size: 2rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+
+}
+
+.Main-article-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.Main-article-ul-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 26rem;
+    height: 23rem;
+    margin: 20px;
+    padding: 22px;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
+
+}
+
+.Main-article-ul-li-img {
+    display: flex;
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(9, 61, 73, 0.5);
+
+}
+
+.Main-article-ul-li-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 14px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #072d2d;
+    font-weight: 600;
+
+}
+
+.Main-article-ul-li-btn {
+    font-size: 0.7rem;
+    margin: 10px;
+    display: inline-block;
+    background-color: #128280;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Main-article-ul-li-btn:hover {
+    transform: scale(1.10);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,6 +329,7 @@
 /*-----------------------------------*/
 
 /*Existe  un espacio entre el Header y el Nav menu al pasar a menos de 750px */
+
 
 
 @media only screen and (max-width: 600px) {
@@ -211,26 +354,20 @@
         width: 100%;
 
     }
-    .Main{
+
+    .Main-section-ul {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-
     }
 }
-    @media screen and (min-widht:600px) and (max-width: 1024px) {
-        .Main-section-ul-li-a {
-            width: 100%;
-            
 
-    
-        
+
+@media screen and (min-widht:600px) and (max-width: 1024px) {
+    .Nav-ul {
+        width: 100%;
+        background-color: rgb(61, 172, 184);
     }
 
-}
-@media screen and (min-width:1180px) {
-    .Main-section-ul-li-a {
-        width: 30rem;
-        margin: 10px;
-    }
+
 }
