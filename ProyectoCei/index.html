@@ -23,6 +23,8 @@
 </head>
 
 <body class="Body">
+    <!--Header-->
+
     <header class="Header">
 
         <div class="Header-logo">
@@ -48,35 +50,38 @@
             </ul>
         </nav>
     </header>
+
+    <!--Titulo princpipal de la pagina(fuera de Main,porque me rompe la seccion de Main,la solucion mas rapida fue ponerlo por fuera del main :)-->
     <div class="Div">
         <h1 class="Div-h1">Bienvenidos a DailyBlog</h1>
         <p class="Div-p">En este blog encontraras articulos sobre la vida diaria de la nueva
             generacion.</p>
-    </div>
-    <main class="Main">
-        <section class="Main-section">
-            <ul class="Main-section-ul ">
-                <li class="Main-section-ul-li ">
-                    <a href="./noticias.html" class="Main-section-ul-li-a">
-                        <img src="./img/instagramimg.webp" alt="social media" class="Main-section-ul-li-a-img">
-                        <p class="Main-section-ul-li-a-p">SocialMedia</p>
-                        <h2 class="Main-section-ul-li-a-h2">Adiccion a redes sociales.Fin del pensamiento critico?</h2>
-                        <button class="Main-section-ul-li-a-btn">
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
-                    </a>
-                </li>
-                <li class="Main-section-ul-li ">
-                    <a href="./noticias.html" class="Main-section-ul-li-a">
-                        <img src="./img/vape.jpg" alt="social media" class="Main-section-ul-li-a-img">
-                        <p class="Main-section-ul-li-a-p Main-p--juventud">Juventud</p>
-                        <h2 class="Main-section-ul-li-a-h2">Adiccion a los vapers.Que problema causan?</h2>
-                        <button class="Main-section-ul-li-a-btn">
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
-                    </a>
-                </li>
-                <li class="Main-section-ul-li ">
+        </div>
+        <main class="Main">
+            <!--Primera seccion-->
+            <section class="Main-section">
+                <ul class="Main-section-ul ">
+                    <li class="Main-section-ul-li ">
+                        <a href="./noticias.html" class="Main-section-ul-li-a">
+                            <img src="./img/instagramimg.webp" alt="social media" class="Main-section-ul-li-a-img">
+                            <p class="Main-section-ul-li-a-p">SocialMedia</p>
+                            <h2 class="Main-section-ul-li-a-h2">Adiccion a redes sociales.Fin del pensamiento critico?</h2>
+                            <button class="Main-section-ul-li-a-btn">
+                                <span class="material-symbols-rounded">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="Main-section-ul-li ">
+                        <a href="./noticias.html" class="Main-section-ul-li-a">
+                            <img src="./img/vape.jpg" alt="social media" class="Main-section-ul-li-a-img">
+                            <p class="Main-section-ul-li-a-p Main-p--juventud">Juventud</p>
+                            <h2 class="Main-section-ul-li-a-h2">Adiccion a los vapers.Que problema causan?</h2>
+                            <button class="Main-section-ul-li-a-btn">
+                                <span class="material-symbols-rounded">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="Main-section-ul-li ">
                     <a href="./noticias.html" class="Main-section-ul-li-a">
                         <img src="./img/youth.jpg" alt="social media" class="Main-section-ul-li-a-img">
                         <p class="Main-section-ul-li-a-p Main-p--oportunidades">Oportunidades</p>
@@ -108,10 +113,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="Main-btn">Siempre informado</button>
         </section>
 
 
-
+<!--Segunda seccion(en etiqueta article porque no queria liarme con los nombres de las clases.)-->
         <article class="Main-article">
             <h2 class="Main-article-h2">Ultimas Publicaiones</h2>
             <p class="Article-p">Las noticias mas relevantes de la semana pasada se van a subir aqui!</p>
@@ -120,7 +126,7 @@
                     <img src="./img/ai.jpg" alt="inteligencia artifiacial" class="Main-article-ul-li-img">
                     <p class="Main-article-ul-li-p">Innovaciones Tecnológicas y su Impacto en la Juventud.</p>
 
-                    <button class="Main-article-ul-li-btn">Leer mas</button>
+                    <a href="./noticias.html"><button class="Main-article-ul-li-btn">Leer mas</button></a>
 
                     </img>
                     </a>
@@ -129,7 +135,7 @@
                     <img src="./img/gym.jpg" alt="deporte" class="Main-article-ul-li-img">
                     <p class="Main-article-ul-li-p">Tendencias Culturales y de Entretenimiento entre los Jóvenes</p>
 
-                    <button class="Main-article-ul-li-btn">Leer mas</button>
+                    <a href="./noticias.html"><button class="Main-article-ul-li-btn">Leer mas</button></a>
 
                     </img>
                     </a>
@@ -137,15 +143,39 @@
                 <li class="Main-article-ul-li">
                     <img src="./img/mentalhealth.png" alt="salud mental" class="Main-article-ul-li-img">
                     <p class="Main-article-ul-li-p">Salud Mental y Bienestar de los Jóvenes</p>
-                    <button class="Main-article-ul-li-btn">Leer mas</button>
-
+                    <a href="./noticias.html"><button class="Main-article-ul-li-btn">Leer mas</button></a>
                     </img>
                     </a>
                 </li>
             </ul>
         </article>
 
+        <!--<button>
+            <a href="./contacto.html" class="Main-btn Main-btn--btn">Quiero recbir notificaciones</a>
+        </button>-->
     </main>
+
+    <!--Pie de pagina-->
+    <footer class="Footer">
+        <section class="Footer-section">
+            <div class="Footer-section Footer-section--links">
+                <div class="Footer-link">Ultima hora</div>
+                <div class="Footer-link">Noticias</div>
+                <div class="Footer-link">Acerca de</div>
+                <div class="Footer-link">FAQ</div>
+                <div class="Footer-link">Contacto</div>
+            </div>
+            <div class="Footer-section Footer-section--social">
+                <div class="Footer-socialIcon">Facebook</div>
+                <div class="Footer-socialIcon">Twitter</div>
+                <div class="Footer-socialIcon">Instagram</div>
+            </div>
+            <div class="Footer-section Footer-section--copyright">
+                <div class="Footer-copyright">&copy; 2024 Company Name</div>
+            </div>
+        </section>
+    
+    </footer>
 </body>
 
 </html>

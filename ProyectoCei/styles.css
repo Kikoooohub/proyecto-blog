@@ -88,7 +88,7 @@
 .Div-h1 {
     text-align: center;
     margin: 20px 0;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #0a3a39;
     font-weight: 800;
 
@@ -97,13 +97,40 @@
 .Div-p {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #0a3a39;
     font-weight: 600;
 }
 
+.Main-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #128280;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+
+}
+
+.Main-btn:hover {
+    transform: scale(1.10);
+    box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
+}
+
 .Main {
-   /* height: 100vh;*/
+    /* height: 100vh;*/
+}
+.Main--btn{
+    margin-top: 20px;
 }
 
 
@@ -113,18 +140,24 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    border: 1px solid #ff520e;
+    padding: 40px;
+    
+  
+
+
+    /*border: 1px solid #ff520e;*/
+    /*Para ver la medida de la seccion,si sobresale o no*/
 }
 
 .Main-section-ul {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-
 }
 
 .Main-section-ul-li {
     width: 26rem;
+    max-width: 100%;
     list-style: none;
     margin: 20px;
     padding: 20px;
@@ -134,6 +167,16 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 1s ease;
     border: 2px solid #0a3a39;
+   
+}
+
+.Main-section-ul-li:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
+    transition: 0.5s ease-in-out;
+
+
+
 }
 
 .Main-section-ul-li-a {
@@ -223,10 +266,12 @@
     justify-content: center;
     padding: 40px;
     margin: 20px;
-    border: solid #ff520e;
+    /*border: solid #ff520e;*/
+    /*Para ver la medida de la seccion,si sobresale o no*/
 }
-.Article-p{
-    font-size: 1.2rem;
+
+.Article-p {
+    font-size: 1.4rem;
     color: #0e4342;
     font-weight: 600;
     margin: 20px;
@@ -234,7 +279,7 @@
 }
 
 .Main-article-h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #0a3a39;
     font-weight: 800;
     margin: 20px;
@@ -265,6 +310,12 @@
     transition: box-shadow 1s ease;
     border: 2px solid #0a3a39;
 
+}
+
+.Main-article-ul-li:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
+    transition: 0.5s ease-in-out;
 }
 
 .Main-article-ul-li-img {
