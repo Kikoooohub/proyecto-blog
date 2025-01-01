@@ -13,7 +13,7 @@
 
 .Body {
     background-color: rgb(210, 255, 255);
-
+    height: 100vh;
 }
 
 .Header * {
@@ -32,7 +32,9 @@
 
 .Header-logo {
     float: left;
+    /* Esta propiedad hace que el elemento .Header-logo se desplace hacia la izquierda dentro de su contenedor */
     height: inherit;
+    /*El elemento .Header-logo tendrá la misma altura que su contenedor padre .Header*/
 }
 
 .Header-logo-title {
@@ -72,9 +74,6 @@
     box-sizing: border-box;
     transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
     /*Aqui se le da el efecto de transicion al hover*/
-
-
-
 }
 
 .Nav-ul-li-a:hover {
@@ -102,36 +101,11 @@
     font-weight: 600;
 }
 
-.Main-btn {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 600;
-    background-color: #128280;
-    border: none;
-    border-radius: 12px;
-    padding: 15px 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-
-
-}
-
-.Main-btn:hover {
-    transform: scale(1.10);
-    box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
-}
 
 .Main {
     /* height: 100vh;*/
 }
-.Main--btn{
-    margin-top: 20px;
-}
+
 
 
 .Main-section {
@@ -141,8 +115,8 @@
     align-items: stretch;
     justify-content: center;
     padding: 40px;
-    
-  
+
+
 
 
     /*border: 1px solid #ff520e;*/
@@ -167,11 +141,12 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 1s ease;
     border: 2px solid #0a3a39;
-   
+
 }
 
 .Main-section-ul-li:hover {
     transform: scale(1.04);
+    /*El elemento se escala 104% de su tamaño original*/
     box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
     transition: 0.5s ease-in-out;
 
@@ -194,7 +169,7 @@
 /*transition: box-shadow 0.3s ease;*/
 /*.Main-section-ul-li-a:hover{
     border-color:#0b1f1f;
-}*/
+    }*/
 
 .Main-section-ul-li-a-img {
     max-width: 100%;
@@ -242,7 +217,7 @@
     /*Esto hace que cuando pases el mouse por encima que cambie el color del box de la flecha y  el color de la flecha */
 
     /*height: 100%;
-        width: 100%;*/
+    width: 100%;*/
     /*El hover no ocupa 100% de su tamaño !? */
 
     /*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
@@ -253,6 +228,31 @@
 
 
 
+
+
+.Main-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #128280;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 10px 10px rgba(14, 12, 116, 0.5);
+
+}
+
+.Main-btn:hover {
+    transform: scale(1.10);
+    box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
+}
 
 
 /*-----------------------------------*/
@@ -351,12 +351,59 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    /*La transición hace que los cambios en las propiedades transform y box-shadow sean suaves y graduales en lugar de instantáneos.*/
 }
 
 .Main-article-ul-li-btn:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.Footer {
+    background-color: #128280;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+
+
+
+}
+
+.Footer-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+
+}
+
+.Footer-section-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    gap: 10px;
+}
+
+.Footer-section-ul-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 
 
 
