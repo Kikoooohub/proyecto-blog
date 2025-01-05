@@ -72,8 +72,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
     width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
-    /*Aqui se le da el efecto de transicion al hover*/
+    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s; /*para que se mas sueve cuendo quites el mouse*/
+
 }
 
 .Nav-ul-li-a:hover {
@@ -224,19 +224,8 @@
 
     /*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
 }
-.Main-section-nosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    margin: 20px;
-    border-bottom: 1px solid gray;
-    /*border: solid #ff520e;*/
-    /*Para ver la medida de la seccion,si sobresale o no*/
-  
-}
-.Main-section-h2{
+
+.Main-section-h2 {
     font-size: 2rem;
     color: #0a3a39;
     font-weight: 800;
@@ -244,10 +233,9 @@
     float: left;
 }
 
-
-
-
-
+.Main-a{
+    text-decoration: none; /*Quita la linea de abajo del buton "SIEMPRE INFORMADO" */
+}
 
 .Main-btn {
     display: flex;
@@ -259,7 +247,7 @@
     background-color: #128280;
     border: none;
     border-radius: 12px;
-    padding: 15px 30px;
+    padding: 15px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
@@ -340,7 +328,6 @@
 }
 
 .Main-article-ul-li-img {
-    display: flex;
     max-width: 100%;
     border-radius: 12px;
     margin: 10px;
@@ -380,6 +367,102 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+/*-----------------------------------*/
+/*            Contacto               */
+/*-----------------------------------*/
+
+
+.Main-section-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+    height: 100vh;
+}
+
+.Main-section-contacto-h2 {
+    font-size: 2rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+}
+
+.Main-section-contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 100px;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #0a3a39;
+}
+
+.Main-section-contacto-form:hover {
+    box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
+    transition: 0.5s ease-in-out;
+
+}
+
+.Main-section-contacto-form-label {
+    font-size: 1.2rem;
+    color: #072d2d;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.Main-section-form-label-input {
+   width: 100%;
+    padding: 12px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #03005b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', sans-serif;
+
+}
+.Main-section-form-label-input-submit{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    background-color: #128280;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 25px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    
+}
+.Main-section-form-label-input-submit:hover{
+    background-color: #0a3a39;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+    padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .Footer {
     background-color: #128280;
     color: white;
@@ -388,9 +471,7 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-
-
-
+   
 }
 
 .Footer-section {

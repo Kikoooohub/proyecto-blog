@@ -1,6 +1,6 @@
 1.La primera seccion quiero hacerla con JS en carossel slider.
 
-2.Dudas en hacer la pagina web responsive,hace falta mas practica sobre esto!!!
+2.Dudas en hacer la pagina web responsive!
 
-3.Como poner un video en tu html
+3.Nombre de las clases  correctas?
 
