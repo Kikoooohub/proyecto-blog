@@ -4,3 +4,5 @@
 
 3.Nombre de las clases  correctas?
 
+4.Footer no esta terminado(voy a incluir iconos de redes sociales).
+

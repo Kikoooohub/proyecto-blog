@@ -72,7 +72,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
     width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s; /*para que se mas sueve cuendo quites el mouse*/
+    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
+    /*para que se mas sueve cuendo quites el mouse*/
 
 }
 
@@ -231,8 +232,9 @@
     float: left;
 }
 
-.Main-a{
-    text-decoration: none; /*Quita la linea de abajo del buton "SIEMPRE INFORMADO" */
+.Main-a {
+    text-decoration: none;
+    /*Quita la linea de abajo del buton "SIEMPRE INFORMADO" */
 }
 
 .Main-btn {
@@ -258,6 +260,56 @@
     transform: scale(1.10);
     box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
 }
+
+
+
+/*-----------------------------------*/
+/*  Parte de noticias del carrousel  */
+/*-----------------------------------*/
+
+
+
+.Main-section--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 10px rgba(48, 14, 159, 0.5);
+    height: 100vh;
+    border: 2px solid #0a3a39;
+}
+
+.Main-section-h2--h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 2.8rem;
+}
+
+.Main-section-ul--ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.Main-section-ul-li--li{
+    display: flex;
+    flex-direction: column;
+    transition: none;
+    transform: none;
+} 
+
+
+
 
 
 /*-----------------------------------*/
@@ -419,7 +471,7 @@
 }
 
 .Main-section-form-label-input {
-   width: 100%;
+    width: 100%;
     padding: 12px;
     margin: 10px;
     display: inline-block;
@@ -430,7 +482,8 @@
     font-family: 'Gill Sans', sans-serif;
 
 }
-.Main-section-form-label-input-submit{
+
+.Main-section-form-label-input-submit {
     font-size: 1.2rem;
     color: white;
     font-weight: 700;
@@ -441,9 +494,10 @@
     margin: 15px;
     cursor: pointer;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    
+
 }
-.Main-section-form-label-input-submit:hover{
+
+.Main-section-form-label-input-submit:hover {
     background-color: #0a3a39;
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -469,7 +523,8 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-   
+    height: 250px;
+
 }
 
 .Footer-section {
