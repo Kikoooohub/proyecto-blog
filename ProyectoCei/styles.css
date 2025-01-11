@@ -161,6 +161,8 @@
     border-radius: 12px;
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
 /* No se aplica hover efecto a la imagen ?! */
@@ -176,6 +178,9 @@
     /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
     border-radius: 10px;
     object-fit: cover;
+
+
+
 
 
 }
@@ -281,6 +286,7 @@
     box-shadow: 0 10px 10px rgba(48, 14, 159, 0.5);
     height: 100vh;
     border: 2px solid #0a3a39;
+    max-width: 100%;
 }
 
 .Main-section-h2--h2 {
@@ -288,7 +294,8 @@
     justify-content: center;
     margin: 20px;
     padding: 20px;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    border-bottom: 1px solid gray;
 }
 
 .Main-section-ul--ul {
@@ -296,17 +303,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     list-style: none;
+    max-width: 100%;
 }
 
-.Main-section-ul-li--li{
+.Main-section-ul-li--li {
     display: flex;
     flex-direction: column;
     transition: none;
     transform: none;
-} 
+}
 
 
 
@@ -509,11 +517,9 @@
 
 
 
-
-
-
-
-
+/*-----------------------------------*/
+/*            Footer                 */
+/*-----------------------------------*/
 
 .Footer {
     background-color: #128280;
