@@ -8,3 +8,5 @@
 
 
 5.Main-section-ul-li(parte landing page tarjeta)  se aplica tambien a .Main-section-li--li(parte redessociales.html por ejemplo)
+
+

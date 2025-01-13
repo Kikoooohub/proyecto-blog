@@ -195,7 +195,7 @@
 }
 
 .Main-section-ul-li-a-p {
-/*position: relative;
+    /*position: relative;
 left:25px;
 */
     color: #0a3a39;
@@ -553,7 +553,8 @@ left:25px;
     display: flex;
     margin: 5rem;
     gap: 20px;
-    position: relative; /* para centrarlos */
+    position: relative;
+    /* para centrarlos */
     left: 2rem;
 
 }
@@ -605,7 +606,7 @@ left:25px;
 /*-----------------------------------------*/
 /*      Acerca de Nosotros (About)         */
 /*-----------------------------------------*/
-.Main-about{
+.Main-about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -613,27 +614,32 @@ left:25px;
     padding: 40px;
     margin: 50px;
 }
-.Section-h2-about{
+
+.Section-h2-about {
     font-size: 2.8rem;
     color: #0a3a39;
     font-weight: 800;
     margin: 20px;
     text-align: center;
     position: relative;
-    bottom:88px; 
+    bottom: 88px;
 
 
-    
+
 }
-.Section-about{
+
+.Section-about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
     margin: 50px;
+    position: relative;
+    bottom: 3.5em;
 }
-.Section-ul-about{
+
+.Section-ul-about {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -646,7 +652,7 @@ left:25px;
 
 }
 
-.Section-ul-li-about{
+.Section-ul-li-about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -665,7 +671,7 @@ left:25px;
 }
 
 
-.Section-ul-li-p-about{
+.Section-ul-li-p-about {
     /*text-transform: lowercase;*/
     margin: 10px;
     font-weight: 400;
@@ -674,6 +680,92 @@ left:25px;
     text-align: center;
 
 }
+
+.Section-figure-img-about {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 25%;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(9, 61, 73, 0.5);
+}
+
+.Figure--img {
+    width: 100%;
+    width: fit-content;
+    border-radius: none;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(9, 61, 73, 0.5);
+
+}
+
+.Section-figcaption-about {
+    font-size: 0.95rem;
+    color: #0a3a39;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+
+
+/*-----------------------------------*/
+/*          Noticias                 */
+/*-----------------------------------*/
+.Main-news {
+    display: block;
+    height: 200vh;
+    background-image: url('./img/girlvape.jpeg');
+}
+
+.Main-h2-news {
+    font-size: 2.8rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+
+
+}
+
+.Main-section-news {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+
+}
+
+.Main-section-ul-news {
+    list-style: none;
+    display: block;
+   padding: 40px;
+
+}
+
+.Main-section-ul-li-news {
+    display:block;
+    background: #f4f9fb;
+    border-radius: 10px;
+    border-color: #072d2d;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    color: #0a3a39;
+    font-size: 1rem;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    font-weight: 700;
+   
+}
+
+
+
+
+
+
 
 
 
