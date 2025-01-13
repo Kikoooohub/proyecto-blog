@@ -14,7 +14,7 @@
 .Body {
     background-color: rgb(210, 255, 255);
     height: 100vh;
-   
+
 }
 
 .Header * {
@@ -28,6 +28,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+
     /*hace que el buton de la imagen ,no se vea en el header */
 }
 
@@ -58,6 +59,7 @@
     padding: 0px;
     margin: 0px;
 
+
 }
 
 .Nav-ul-li {
@@ -74,6 +76,7 @@
     width: 100%;
     box-sizing: border-box;
     transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
+
     /*para que se mas sueve cuendo quites el mouse*/
 
 }
@@ -93,6 +96,7 @@
     color: #0a3a39;
     font-weight: 800;
 
+
 }
 
 .Div-p {
@@ -101,6 +105,7 @@
     font-size: 1.4rem;
     color: #0a3a39;
     font-weight: 600;
+
 }
 
 
@@ -120,6 +125,7 @@
 
 
 
+
     /*border: 1px solid #ff520e;*/
     /*Para ver la medida de la seccion,si sobresale o no*/
 }
@@ -128,6 +134,7 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
+
 }
 
 .Main-section-ul-li {
@@ -188,6 +195,9 @@
 }
 
 .Main-section-ul-li-a-p {
+/*position: relative;
+left:25px;
+*/
     color: #0a3a39;
     padding: 8px 16px;
     font-size: 0.95rem;
@@ -196,7 +206,6 @@
     background: #68D8D6;
     width: fit-content;
     border-radius: 50px;
-
 }
 
 .Main-section-ul-li-a-h2 {
@@ -239,8 +248,23 @@
     float: left;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*/
+/*    BTN SIEMPRE INFORMADO   */
+/*----------------------------*/
+
 .Main-a {
     text-decoration: none;
+    margin: 45px;
     /*Quita la linea de abajo del buton "SIEMPRE INFORMADO" */
 }
 
@@ -267,6 +291,10 @@
     transform: scale(1.10);
     box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
 }
+
+
+
+
 
 
 
@@ -361,8 +389,8 @@
 }
 
 .Main-section-img {
-    width:150%;
-    max-width:30em;
+    width: 150%;
+    max-width: 30em;
     border-radius: 10px;
     object-fit: cover;
     margin: 20px;
@@ -495,6 +523,165 @@
 
 
 
+/*------------------------------------*/
+/*       Consejos Landing page        */
+/*------------------------------------*/
+
+.Section-advice {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+    position: relative;
+    bottom: 43px;
+
+}
+
+.Section-h2-advice {
+    font-size: 2.8rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.Section-ul-advice {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    margin: 5rem;
+    gap: 20px;
+    position: relative; /* para centrarlos */
+    left: 2rem;
+
+}
+
+.Section-ul-li-advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f9fb;
+    border-radius: 10px;
+    border-color: #072d2d;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    color: #0a3a39;
+    font-size: 1.6rem;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+.Section-ul-li-p-advice {
+    text-transform: lowercase;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #072d2d;
+    line-height: 1.5;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------*/
+/*      Acerca de Nosotros (About)         */
+/*-----------------------------------------*/
+.Main-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+}
+.Section-h2-about{
+    font-size: 2.8rem;
+    color: #0a3a39;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    bottom:88px; 
+
+
+    
+}
+.Section-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px;
+}
+.Section-ul-about{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    padding: 20px;
+    width: 80%;
+
+}
+
+.Section-ul-li-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f9fb;
+    border-radius: 10px;
+    border-color: #072d2d;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    color: #0a3a39;
+    font-size: 1.6rem;
+    gap: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin: 30px;
+    font-weight: 700;
+}
+
+
+.Section-ul-li-p-about{
+    /*text-transform: lowercase;*/
+    margin: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #072d2d;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -602,7 +789,7 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-    height:250px;
+    height: 250px;
 
 }
 
@@ -623,7 +810,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    padding: 0;
     gap: 10px;
 }
 
@@ -637,7 +823,14 @@
     font-size: 1rem;
     cursor: pointer;
 }
-.Footer-section-ul-social{
+
+.Footer-section-ul-li:hover {
+    color: #23157b;
+    transition: color 0.2s ease-in-out;
+
+}
+
+.Footer-section-ul-social {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -649,7 +842,8 @@
     text-decoration: none;
 
 }
-.Footer-social-a{
+
+.Footer-social-a {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -659,12 +853,18 @@
     color: white;
     text-decoration: none;
 }
-.Footer-section-ul-a{
+
+.Footer-social-a:hover {
+    color: #23157b;
+    transition: color 0.2s ease-in-out;
+}
+
+.Footer-section-ul-a {
     list-style: none;
     color: white;
     text-decoration: none;
     cursor: pointer;
-   
+
 }
 
 
