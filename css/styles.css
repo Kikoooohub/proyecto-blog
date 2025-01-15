@@ -13,7 +13,7 @@
 
 .Body {
     background-color: rgb(210, 255, 255);
-   
+
 
 }
 
@@ -690,7 +690,6 @@ left:25px;
 .Figure--img {
     width: 100%;
     width: fit-content;
-    border-radius: none;
     margin: 20px;
     box-shadow: 0 5px 10px rgba(9, 61, 73, 0.5);
 
@@ -713,27 +712,21 @@ left:25px;
 /*          Noticias                 */
 /*-----------------------------------*/
 .Main-news {
-    display: block;
-    height: 200vh;
-
-
-
-
-
-/*Solamente intendo nuevas cosas,me he dado cuenta muy tarde para aplicarlo
-    /* background-image: url('/ProyectoCei/img/background.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
     position: relative;
-    bottom: 1.3em;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);*/
+    left: 5rem;
+    height: fit-content;
+   
 
 }
 
 .Main-h2-news {
     font-size: 2.8rem;
-    color: #ff0000;
+    color: #0a3a39;
     font-weight: 800;
     margin: 20px;
     text-align: center;
@@ -741,42 +734,96 @@ left:25px;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Gill Sans', sans-serif;
     font-weight: 900;
+    position: relative;
+    top: 1rem;
+    left: 3rem;
 
 
 
 
 }
 
-.Main-section-news {
-    display: block;
+.Section-news {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
     margin: 50px;
+    position: relative;
+    left: 3rem;
+    top: 13rem;
+    margin-bottom: -5rem;
 
 }
 
-.Main-section-ul-news {
+.Ul-news {
     list-style: none;
     display: block;
     padding: 40px;
+    margin: 50px;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    height: 100%;
+
 
 }
 
-.Main-section-ul-li-news {
-    
+.Li-news {
+    background-color: #f4f9fb;
     border-radius: 10px;
-    border-color: #000000;
     box-shadow: 0 10px 10px rgba(10, 19, 201, 0.5);
     color: #0a3a39;
     font-size: 1rem;
-    gap: 20px;
     padding: 20px;
     margin: 30px;
-    font-weight: 700;
     text-align: center;
-    width: 80%;
+    width: 70%;
+    position: relative;
+    right: 20rem;
+    bottom: 10rem;
 }
+
+.Main-img-news {
+    width: 30rem;
+    height: 22rem;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(10, 19, 201, 0.5);
+    padding: 20px;
+    position: relative;
+    left: 20rem;
+    bottom: 41rem;
+
+
+}
+
+.Main-h3-news {
+    text-align: center;
+    margin: 10px;
+}
+
+.Main-p-news {
+    text-align: center;
+    margin: 10px;
+}
+
+.Li-news--reverse {
+    position: relative;
+    left: 0rem;
+    bottom: 28rem;
+
+}
+.Img-reverse{
+    position: relative;
+    bottom: -1rem;
+    width: 17rem;
+    height: 13rem;
+    border-radius: 10px;
+}
+
 
 
 
@@ -791,11 +838,12 @@ left:25px;
 /*      Acordeon     */
 /* ===================*/
 
-.Main-acordeon{
+.Main-acordeon {
     display: block;
     height: 100vh;
 }
-.Section-acordeon{
+
+.Section-acordeon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -803,7 +851,8 @@ left:25px;
     padding: 40px;
     margin: 50px;
 }
-.Ul-acordeon{
+
+.Ul-acordeon {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -971,6 +1020,7 @@ left:25px;
 
 }
 
+
 .Footer-section-ul-social {
     list-style: none;
     display: flex;
@@ -981,6 +1031,7 @@ left:25px;
     gap: 10px;
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 
 }
 
