@@ -1,23 +1,59 @@
-// 1. Declarar variables y cosntantes
-const headers = document.querySelectorAll(".acordeon-header");
-const items = document.querySelectorAll(".acordeon-item");
 
 
-// 2. Crear funciones y listeners
-// a.) Pasar por todas las cabezeras,agregarles un click y agregar active al que le haga click
-headers.forEach((header) => {
 
-    header.addEventListener("click", () => {
-        const item = header.closest(".acordeon-item");
 
-        //quitar el active de todos
-        items.forEach(elemento => {
-            elemento.classList.remove("active");
+
+
+
+
+
+
+
+
+//Declarar variables
+/*const preguntas = document.querySelectorAll('.Container-pregunta');
+
+
+
+preguntas.forEach(pregunta => {
+    pregunta.addEventListener('click', () => {
+        const respuestaAsociada = pregunta.closest('.Container-pregunta');
+
+       //quitar el visible de todos
+        respuesta.forEach(element => {
+            element.classList.remove('visible');
         });
 
-        //agregar el active a item
-        item.classList.toggle("active");
+        //agregar el visible a respuesta
+        respuestaAsociada.classList.toggle('visible');
+    });
+})*/
 
+
+
+
+// Selecciona todas las preguntas
+const preguntas = document.querySelectorAll('.Container-pregunta');
+
+// Itera sobre cada pregunta para agregar un evento de clic
+preguntas.forEach(pregunta => {
+    pregunta.addEventListener('click', () => {
+        // Encuentra el contenedor de la respuesta asociada
+        const respuesta = pregunta.nextElementSibling;
+
+        // Comprobamos si la respuesta existe (es decir, si nextElementSibling no es null)
+        if (respuesta && respuesta.classList.contains('Container-respuesta')) {
+
+            // Quitar la clase 'visible' de todas las respuestas
+            document.querySelectorAll('.Container-respuesta').forEach(res => {
+                if (res !== respuesta) {
+                    res.classList.remove('visible');
+                }
+            });
+
+            // Alterna la visibilidad de la respuesta clicada
+            respuesta.classList.toggle('visible');
+        }
     });
 });
 
@@ -27,7 +63,8 @@ headers.forEach((header) => {
 
 
 
-//3. Ejecutar nuestros programa
 
-//hacer click en nuestro primer elemento
-headers[0].click();
+
+
+
+

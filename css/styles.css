@@ -760,11 +760,11 @@ left:25px;
 }
 
 .Ul-news {
-  list-style: none;
-display: block;
-padding: 30px;
-margin: 45px;
-    
+    list-style: none;
+    display: block;
+    padding: 30px;
+    margin: 45px;
+
 }
 
 .Li-news {
@@ -845,40 +845,113 @@ margin: 45px;
 /* ===================*/
 /*      Acordeon     */
 /* ===================*/
-.Body-faq{
+.Body-faq {
     background-color: rgb(210, 255, 255);
     height: 100vh;
+}
+
+.Section-faq {
+    min-height: 120vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-.Main-faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  height: 100vh;
-  position: relative;
-  left: 5rem;
+
+.Faq-title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    color: #072d2d;
+
 }
-.Section-faq{
+
+.Faq-text {
+    font-size: 1.4rem;
+    margin: 1rem;
+    color: #072d2d;
+    line-height: 1.5;
+}
+
+.Container {
+    width: 1500px;
+   max-height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    margin: 10px;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+
+}
+
+.Container:hover {
+    /*transform: scale(1.05);*/
+    border: 2px solid #120064;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     
+    
+
+
+
 }
-.Ul-faq{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-    margin: 50px;
-    width: 80%;
-    height: fit-content;
+
+.Container-pregunta {
+    font-size: 1.6rem;
+    color: #072d2d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+   
+
+
+.Container-pregunta:hover{
+    color: #120064;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid #120064;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.h3-pregunta {
+    font-size: 1.4rem;
+}
+
+.Container-respuesta {
+  
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    min-width:700px;
+
+   transition: max-height 0.3s ease-in-out;
+    display: none;
+    color: #072d2d;
+    font-weight: 600;
+    
+
+}
+
+
+.Container-respuesta.visible {
+    display: block;
+    
+   
+}
+
 
 
 
