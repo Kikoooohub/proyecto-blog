@@ -810,9 +810,10 @@ left:25px;
 
 
 
-/* ===================*/
-/*      Acordeon     */
-/* ===================*/
+/* ------------------------------*/
+/*          Acordeon            */
+/* ----------------------------*/
+
 .Body-faq {
     background-color: rgb(210, 255, 255);
     height: 100vh;
@@ -842,7 +843,7 @@ left:25px;
 }
 
 .Container {
-    width: 1500px;
+    width: 1300px;
     max-height: 150px;
     display: flex;
     flex-direction: column;

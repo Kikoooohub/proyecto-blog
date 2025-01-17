@@ -1,26 +1,27 @@
 
 
-// Selecciona todas las preguntas
+// Declaro las varibales
 const preguntas = document.querySelectorAll('.Container-pregunta');
 
-// Itera sobre cada pregunta para agregar un evento de clic
+
 preguntas.forEach(pregunta => {
     pregunta.addEventListener('click', () => {
-        // Encuentra el contenedor de la respuesta asociada
-        const respuesta = pregunta.nextElementSibling;
 
-        // Comprobamos si la respuesta existe (es decir, si nextElementSibling no es null)
+        const respuesta = pregunta.nextElementSibling; // Encuentra el contenedor de la respuesta asociada
+
+        // Existe el contenedor de la respuesta?
         if (respuesta && respuesta.classList.contains('Container-respuesta')) {
 
             // Quitar la clase 'visible' de todas las respuestas
-            document.querySelectorAll('.Container-respuesta').forEach(res => {
+            // Si la respuesta es estrictamente desigual
+            document.querySelectorAll('Container-respuesta').forEach(res => {
                 if (res !== respuesta) {
                     res.classList.remove('visible');
                 }
             });
 
-            // Alterna la visibilidad de la respuesta clicada
-            respuesta.classList.toggle('visible');
+
+            respuesta.classList.toggle('visible');//AGrega la clase 'visible' con toggle
         }
     });
 });
