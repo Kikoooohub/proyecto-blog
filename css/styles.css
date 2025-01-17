@@ -9,12 +9,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 .Body {
     background-color: rgb(210, 255, 255);
+    /*width: 100vw;*/
 
 }
+
 
 .Header * {
     color: white;
@@ -26,9 +29,7 @@
     padding: 10px 0px;
     position: sticky;
     top: 0;
-    z-index: 1000;
-
-    /*hace que el buton de la imagen ,no se vea en el header */
+    z-index: 99;/*hace que el buton de la imagen ,no se vea en el header */
 }
 
 .Header-logo {
@@ -74,9 +75,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
     width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
-
-    /*para que se mas sueve cuendo quites el mouse*/
+    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;/*para que se mas sueve cuendo quites el mouse*/
 
 }
 
@@ -84,8 +83,7 @@
     background-color: rgb(36, 114, 122);
     padding: 9px;
     border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /*Aqui se le da el efecto de sombra al hover*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);/*Aqui se le da el efecto de sombra al hover*/
 }
 
 .Div-h1 {
@@ -110,6 +108,7 @@
 
 .Main {
     /* height: 100vh;*/
+
 }
 
 
@@ -121,12 +120,6 @@
     align-items: stretch;
     justify-content: center;
     padding: 40px;
-
-
-
-
-    /*border: 1px solid #ff520e;*/
-    /*Para ver la medida de la seccion,si sobresale o no*/
 }
 
 .Main-section-ul {
@@ -152,18 +145,6 @@
 
 }
 
-.Main-section-ul-li:hover {
-    /*transform: scale(1.04);
-    /*El elemento se escala 104% de su tamaño original
-    box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
-    transition: 0.5s ease-in-out; 
-    Se aplica tambien a Main--li,me rompe la imagen y el texto de las noticias.
-    */
-
-
-
-}
-
 .Main-section-ul-li-a {
 
     display: block;
@@ -176,17 +157,9 @@
 
 }
 
-/* No se aplica hover efecto a la imagen ?! */
-/*transition: 0.4s ease ;*/
-/*transition: box-shadow 0.3s ease;*/
-/*.Main-section-ul-li-a:hover{
-    border-color:#0b1f1f;
-    }*/
-
 .Main-section-ul-li-a-img {
     max-width: 100%;
-    aspect-ratio: 16/9;
-    /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
+    aspect-ratio: 16/9;/*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
     border-radius: 10px;
     object-fit: cover;
 
@@ -217,8 +190,8 @@ left:25px;
 }
 
 .Main-section-ul-li-a-btn {
-    height: 35px;
-    width: 35px;
+    height: 39px;
+    width: 38px;
     border-radius: 50%;
     margin: 30px 0 5px;
     border: 3.5px solid #27848f;
@@ -231,13 +204,12 @@ left:25px;
 .Main-section-ul-li-a-btn:hover {
     background-color: #27848f;
     color: #fff;
+    transition: background-color 0.2s ease;
     /*Esto hace que cuando pases el mouse por encima que cambie el color del box de la flecha y  el color de la flecha */
 
     /*height: 100%;
     width: 100%;*/
     /*El hover no ocupa 100% de su tamaño !? */
-
-    /*Como hacer que el hover sea mas suave,cuando quites el mouse ?*/
 
     /*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
 }
@@ -902,7 +874,7 @@ left:25px;
     font-weight: 700;
     transition: ease-in-out 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 2px;
-    
+
 
 }
 
