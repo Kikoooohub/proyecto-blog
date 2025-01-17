@@ -1275,22 +1275,20 @@ left:25px;
     }
 
 }
+
 @media only screen and (min-width: 650px) and (max-width: 1250px) {
 
 
 
-    .Header{
+    .Header {
         width: 1250px;
     }
 
     .Div-h1 {
 
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        
-
-
     }
 }
