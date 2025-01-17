@@ -149,13 +149,16 @@
     transition: box-shadow 1s ease;
     border: 2px solid #0a3a39;
 
+
 }
 
 .Main-section-ul-li:hover {
-    transform: scale(1.04);
-    /*El elemento se escala 104% de su tamaño original*/
+    /*transform: scale(1.04);
+    /*El elemento se escala 104% de su tamaño original
     box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; 
+    Se aplica tambien a Main--li,me rompe la imagen y el texto de las noticias.
+    */
 
 
 
@@ -335,12 +338,11 @@ left:25px;
 }
 
 .Main-section-h2--h2 {
-    font-size: 2.2rem;
-    border-bottom: 1px solid gray;
+    font-size: 2.4rem;
+    /* border-bottom: 1px solid gray;*/
     color: #0a3a39;
     font-weight: 800;
     margin: 20px;
-    /*border-bottom: 1px solid gray;*/
     padding: 10px;
     position: relative;
     left: 18rem;
@@ -363,17 +365,7 @@ left:25px;
 
 }
 
-.Main-section-li--li {
-    display: block;
-    flex-direction: column;
-    max-width: fit-content;
-
-
-    /*
-    transform: none;
-    transition: none; no lo aplica*/
-
-}
+.Main--li {}
 
 
 .Main-section-li-h2 {
@@ -875,7 +867,7 @@ left:25px;
 
 .Container {
     width: 1500px;
-   max-height: 150px;
+    max-height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -883,21 +875,21 @@ left:25px;
     text-align: center;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    cursor: pointer;
     background-color: #f5f5f5;
     border-radius: 5px;
     border: 2px solid #000;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: auto;
 
 
 }
 
 .Container:hover {
     /*transform: scale(1.05);*/
-    border: 2px solid #120064;
+    border: 3px solid #120064;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    
-    
+
+
 
 
 
@@ -908,13 +900,16 @@ left:25px;
     color: #072d2d;
     margin-bottom: 1rem;
     font-weight: 700;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: ease-in-out 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 2px;
+    
+
 }
 
-   
 
 
-.Container-pregunta:hover{
+
+.Container-pregunta:hover {
     color: #120064;
     cursor: pointer;
     transform: scale(1.05);
@@ -922,7 +917,7 @@ left:25px;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    
+
 
 }
 
@@ -931,25 +926,20 @@ left:25px;
 }
 
 .Container-respuesta {
-  
     font-size: 1.1rem;
-    padding-top: 1rem;
     font-weight: 600;
-    min-width:700px;
-
-   transition: max-height 0.3s ease-in-out;
+    min-width: 700px;
+    transition: max-height 0.3s ease-in-out;
     display: none;
     color: #072d2d;
     font-weight: 600;
-    
+
 
 }
 
 
 .Container-respuesta.visible {
     display: block;
-    
-   
 }
 
 
@@ -1056,6 +1046,35 @@ left:25px;
 
 
 
+/*------------------------------------*/
+/*       BTN-DARK                     */
+/*------------------------------------*/
+
+.Container-dark {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+
+
+
+}
+
+.Container-btn-dark {
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+
+
 
 /*-----------------------------------*/
 /*            Footer                 */
@@ -1073,6 +1092,17 @@ left:25px;
 
 }
 
+.Footer-h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    background-color: #f4f9fb;
+    color: #072d2d;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
 .Footer-section {
     display: flex;
     justify-content: center;
@@ -1084,7 +1114,7 @@ left:25px;
 
 }
 
-.Footer-section-ul {
+.Footer-ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -1093,7 +1123,7 @@ left:25px;
     gap: 10px;
 }
 
-.Footer-section-ul-li {
+.Footer-li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1104,7 +1134,7 @@ left:25px;
     cursor: pointer;
 }
 
-.Footer-section-ul-li:hover {
+.Footer-li:hover {
     color: #23157b;
     transition: color 0.2s ease-in-out;
 
@@ -1122,6 +1152,20 @@ left:25px;
     color: white;
     text-decoration: none;
     font-size: 1rem;
+
+}
+
+.Footer-a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+
+
+}
+
+.Footer-a:hover {
+    color: #23157b;
+    transition: color 0.2s ease-in-out;
 
 }
 
