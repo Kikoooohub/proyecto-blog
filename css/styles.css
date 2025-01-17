@@ -821,10 +821,13 @@ left:25px;
 
 .Section-faq {
     min-height: 100%;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 50px;
+
 
 }
 
@@ -833,30 +836,33 @@ left:25px;
     margin: 2rem 0rem;
     color: #072d2d;
 
+
 }
 
 .Faq-text {
     font-size: 1.4rem;
-    margin: 1rem;
+    margin: 3rem;
     color: #072d2d;
     line-height: 1.5;
 }
 
 .Container {
-    width: 1300px;
+    width: 1250px;
     max-height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #f5f5f5;
     border-radius: 5px;
     border: 2px solid #000;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.6s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: auto;
+    position: relative;
+    bottom: 30px;
 
 
 }
@@ -877,7 +883,7 @@ left:25px;
     color: #072d2d;
     margin-bottom: 1rem;
     font-weight: 700;
-    transition: ease-in-out 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 2px;
 
 
