@@ -89,7 +89,7 @@
     /*Aqui se le da el efecto de sombra al hover*/
 }
 
-.Div-h1 {
+.Div-h2 {
     text-align: center;
     margin: 20px 0;
     font-size: 2.8rem;
@@ -1224,7 +1224,7 @@ left:25px;
 
     }
 
-    .Div-h1 {
+    .Div-h2 {
 
         font-size: 30px;
         text-align: center;
@@ -1284,7 +1284,7 @@ left:25px;
         width: 1250px;
     }
 
-    .Div-h1 {
+    .Div-h2 {
 
         display: flex;
         justify-content: center;
