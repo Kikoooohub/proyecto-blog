@@ -109,10 +109,6 @@
 }
 
 
-.Main {
-    /* height: 100vh;*/
-
-}
 
 
 
@@ -152,10 +148,12 @@
 
     display: block;
     background: #fff;
-    padding: 18px;
+    padding: 20px;
     border-radius: 12px;
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    min-height: 80%;/*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
+    
 
 
 }
@@ -240,35 +238,33 @@ left:25px;
 /*    BTN SIEMPRE INFORMADO   */
 /*----------------------------*/
 
-.Main-a {
+.Main-a-btn{
     text-decoration: none;
-    margin: 45px;
-    /*Quita la linea de abajo del buton "SIEMPRE INFORMADO" */
-}
-
-.Main-btn {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    font-size: 1rem;
+    margin: 5rem;
+    font-size: 1.2rem;
     color: #fff;
     font-weight: 600;
     background-color: #128280;
-    border: none;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 10px rgba(14, 12, 116, 0.5);
-
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.Main-a-btn:hover{
+    
+    background-color: #0d5855;
+    transition: background-color 0.3s ease-in-out;
+    
+    
+}
+.Main-li-btn{
+    list-style: none;
+    margin: 0 20px;
+    padding: 20px;
 }
 
-.Main-btn:hover {
-    transform: scale(1.10);
-    box-shadow: 0 8px 15px rgba(28, 9, 173, 0.2);
-}
+
 
 
 
@@ -341,7 +337,6 @@ left:25px;
 
 }
 
-.Main--li {}
 
 
 .Main-section-li-h2 {
