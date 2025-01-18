@@ -1,5 +1,5 @@
 /*Import Google style -Inter*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');*/
 
 
 
@@ -211,9 +211,8 @@ left:25px;
 
     /*height: 100%;
     width: 100%;*/
-    /*El hover no ocupa 100% de su tamaño !? */
+    
 
-    /*Solucion de problema de espacio-con un padding de 9px no se nota que el color azul mas osuro del hover no ocupa 100% de su espacio,ya que hace el efecto que ven.*/
 }
 
 .Main-section-h2 {
