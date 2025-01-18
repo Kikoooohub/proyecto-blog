@@ -152,8 +152,9 @@
     border-radius: 12px;
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    min-height: 80%;/*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
-    
+    min-height: 80%;
+    /*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
+
 
 
 }
@@ -211,7 +212,7 @@ left:25px;
 
     /*height: 100%;
     width: 100%;*/
-    
+
 
 }
 
@@ -237,7 +238,7 @@ left:25px;
 /*    BTN SIEMPRE INFORMADO   */
 /*----------------------------*/
 
-.Main-a-btn{
+.Main-a-btn {
     text-decoration: none;
     margin: 5rem;
     font-size: 1.2rem;
@@ -250,14 +251,16 @@ left:25px;
     transition: background-color 0.3s ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
-.Main-a-btn:hover{
-    
+
+.Main-a-btn:hover {
+
     background-color: #0d5855;
     transition: background-color 0.3s ease-in-out;
-    
-    
+
+
 }
-.Main-li-btn{
+
+.Main-li-btn {
     list-style: none;
     margin: 0 20px;
     padding: 20px;
@@ -1049,8 +1052,8 @@ left:25px;
     cursor: pointer;
 }
 
-body.light-mode .Container-btn-dark{
-    background-color:black;
+body.light-mode .Container-btn-dark {
+    background-color: black;
     color: white;
 }
 
@@ -1209,8 +1212,15 @@ body.light-mode .Container-btn-dark{
 
     }
 
+    .Header {
+        height: 100px;
+      
+        
+    }
+
     .Nav-ul {
         width: 100%;
+        display: flex;
         background-color: rgb(61, 172, 184);
     }
 
@@ -1219,7 +1229,11 @@ body.light-mode .Container-btn-dark{
         text-align: center;
         box-sizing: border-box;
         padding: 8px;
-        border-bottom: 1px solid rgb(235, 235, 235);
+        position: relative;
+
+
+
+
 
     }
 
@@ -1227,6 +1241,10 @@ body.light-mode .Container-btn-dark{
         float: none;
         text-align: center;
         width: 100%;
+
+
+
+
 
     }
 
@@ -1238,6 +1256,11 @@ body.light-mode .Container-btn-dark{
         top: 20px;
 
 
+    }
+
+    .Main-article-h2 {
+        font-size: 40px;
+        text-align: center;
     }
 
     .Div-p {
