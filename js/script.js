@@ -2,6 +2,7 @@
 
 // Declaro las varibales
 const preguntas = document.querySelectorAll('.Container-pregunta');
+const darkMode = document.getElementById('#darkMode');
 
 
 preguntas.forEach(pregunta => {
@@ -24,6 +25,14 @@ preguntas.forEach(pregunta => {
             respuesta.classList.toggle('visible');//AGrega la clase 'visible' con toggle
         }
     });
+});
+
+// Seleccionar el botón
+
+// Añadir un event listener al botón
+darkMode.addEventListener('click', () => {
+    // Alternar la clase 'light-mode' en el cuerpo del documento
+    document.body.classList.toggle('light-mode');
 });
 
 

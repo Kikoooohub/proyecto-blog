@@ -1049,6 +1049,11 @@ left:25px;
     cursor: pointer;
 }
 
+body.light-mode .Container-btn-dark{
+    background-color:black;
+    color: white;
+}
+
 
 
 
