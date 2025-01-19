@@ -128,6 +128,7 @@
 
 }
 
+
 .Main-section-ul-li {
     width: 26rem;
     max-width: 100%;
@@ -153,6 +154,9 @@
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     min-height: 80%;
+    color:#333;
+    
+   
     /*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
 
 
@@ -165,6 +169,7 @@
     /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
     border-radius: 10px;
     object-fit: cover;
+    margin: 10px 0 10px;
 
 
 
@@ -192,7 +197,7 @@ left:25px;
     font-weight: 700;
 }
 
-.Main-section-ul-li-a-btn {
+/*.Main-section-ul-li-a-btn {
     height: 39px;
     width: 38px;
     border-radius: 50%;
@@ -202,7 +207,7 @@ left:25px;
     cursor: pointer;
     background: none;
     transform: rotate(-90deg);
-}
+}*/
 
 .Main-section-ul-li-a-btn:hover {
     background-color: #27848f;
@@ -287,9 +292,9 @@ left:25px;
 
 
 
-/*-----------------------------------*/
-/*  Parte de noticias del carrousel  */
-/*-----------------------------------*/
+/*--------------------------------------------*/
+/* redessociales.html y las otras 4 noticias */
+/*------------------------------------------*/
 .Main {
     height: 100vh;
     display: flex;
@@ -357,7 +362,7 @@ left:25px;
     object-fit: cover;
     margin: 20px;
     position: absolute;
-    top: 7em;
+    top: 4em;
     right: 40em;
     box-shadow: 0 10px 10px rgba(69, 6, 186, 0.5);
 }
@@ -436,7 +441,7 @@ left:25px;
 }
 
 .Main-article-ul-li:hover {
-    transform: scale(1.04);
+   
     box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
     transition: 0.5s ease-in-out;
 }
@@ -460,26 +465,27 @@ left:25px;
 
 }
 
-.Main-article-ul-li-btn {
-    font-size: 0.7rem;
+.Article-a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #0a3a39;
     margin: 10px;
-    display: inline-block;
-    background-color: #128280;
-    border: none;
-    border-radius: 12px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background-color:#0a3a39;
     color: white;
-    padding: 15px 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    /*La transición hace que los cambios en las propiedades transform y box-shadow sean suaves y graduales en lugar de instantáneos.*/
+    
+    
+}
+.Article-a:hover{
+    background-color: #072d2d;
+    color: white;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+
 }
 
-.Main-article-ul-li-btn:hover {
-    transform: scale(1.10);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+
 
 
 
@@ -518,6 +524,7 @@ left:25px;
     position: relative;
     /* para centrarlos */
     left: 2rem;
+    
 
 }
 
@@ -537,6 +544,7 @@ left:25px;
     margin: 30px;
     text-transform: uppercase;
     font-weight: 600;
+  
 }
 
 
@@ -958,7 +966,7 @@ left:25px;
     text-align: center;
 }
 
-.Main-section-contacto-form {
+.Section-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -971,13 +979,13 @@ left:25px;
     border: 2px solid #0a3a39;
 }
 
-.Main-section-contacto-form:hover {
+.Section-form:hover {
     box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
     transition: 0.5s ease-in-out;
 
 }
 
-.Main-section-contacto-form-label {
+.Section-label {
     font-size: 1.2rem;
     color: #072d2d;
     font-weight: 600;
@@ -988,20 +996,24 @@ left:25px;
     font-family: 'Gill Sans', sans-serif;
 }
 
-.Main-section-form-label-input {
+.Section-input {
     width: 100%;
     padding: 12px;
     margin: 10px;
     display: inline-block;
-    border: 1px solid #03005b;
+    border: 1.5px solid #03005b;
+   
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', sans-serif;
 
 }
-
-.Main-section-form-label-input-submit {
+.Section-input:hover{
+    background-color: rgb(176, 176, 176);
+    transition: background-color 0.4s ease-in-out;
+}
+.Section-submit {
     font-size: 1.2rem;
     color: white;
     font-weight: 700;
@@ -1015,12 +1027,12 @@ left:25px;
 
 }
 
-.Main-section-form-label-input-submit:hover {
+.Section-submit:hover {
     background-color: #0a3a39;
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: 0.5s ease-in-out;
-    padding: 10px 30px;
+    transition: 0.4s ease-in-out;
+   
 }
 
 
@@ -1671,7 +1683,7 @@ left:25px;
         position: absolute;
         top: 500px;
         left: 38px;
-        width: 389pxx;
+        width: 389px;
 
     }
 
