@@ -2,7 +2,7 @@
 
 // Declaro las varibales
 const preguntas = document.querySelectorAll('.Container-pregunta');
-const darkMode = document.getElementById('#darkMode');
+
 
 
 preguntas.forEach(pregunta => {
@@ -27,14 +27,21 @@ preguntas.forEach(pregunta => {
     });
 });
 
-// Seleccionar el botón
 
-// Añadir un event listener al botón
-darkMode.addEventListener('click', () => {
-    // Alternar la clase 'light-mode' en el cuerpo del documento
-    document.body.classList.toggle('light-mode');
-});
 
+/*function cambiarClases(buttonSelector, targetSelector, className) {
+    const lista_items = document.querySelectorAll(buttonSelector);
+    const targets = document.querySelectorAll(targetSelector);
+    
+    lista_items.forEach(button => {
+        button.addEventListener('click', () => {
+            targets.forEach(target => {
+                target.classList.toggle(className);
+            });
+        });
+    });
+}
+cambiarClases("#darkMode", ".Body-faq", "open");*/
 
 
 
