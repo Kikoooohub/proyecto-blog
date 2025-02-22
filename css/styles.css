@@ -1442,7 +1442,7 @@ left:25px;
         background-color: rgb(61, 172, 184);
     }
 
-    .Main-section-ul {
+    .Main-ul {
         width: 100%;
         flex-direction: column;
         align-items: center;
