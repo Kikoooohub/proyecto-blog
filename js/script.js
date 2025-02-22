@@ -29,19 +29,32 @@ preguntas.forEach(pregunta => {
 
 
 
-/*function cambiarClases(buttonSelector, targetSelector, className) {
-    const lista_items = document.querySelectorAll(buttonSelector);
-    const targets = document.querySelectorAll(targetSelector);
-    
-    lista_items.forEach(button => {
-        button.addEventListener('click', () => {
-            targets.forEach(target => {
-                target.classList.toggle(className);
-            });
-        });
-    });
-}
-cambiarClases("#darkMode", ".Body-faq", "open");*/
+document.addEventListener('DOMContentLoaded', (event) => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Verifica si el usuario ya tiene una preferencia de tema guardada
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            themeToggleBtn.textContent = 'Modo Claro';
+        }
+    }
+
+    // Función para cambiar el tema
+    themeToggleBtn.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light-mode');
+            themeToggleBtn.textContent = 'Modo Oscuro';
+        } else {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark-mode');
+            themeToggleBtn.textContent = 'Modo Claro';
+        }
+    });
+});
 
 
 
