@@ -2,14 +2,25 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');*/
 
 
+:root {
+    --color-primary: rgb(61, 172, 184);
+    --color-secondary: rgb(210, 255, 255);
+    --color-accent: rgb(0, 0, 96);
+    --color-text: rgb(10, 58, 57);
+    --font-family-base: "Inter", sans-serif;
+    --font-size-base: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+}
+
 
 
 * {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-family-base);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 .Body {
@@ -19,74 +30,92 @@
 }
 
 
-.Header * {
+.header {
+    background-color: var(--color-primary);
     color: white;
-}
-
-.Header {
-    background-color: rgb(61, 172, 184);
     height: 60px;
-    padding: 10px 0px;
+    padding: var(--spacing-small) 0;
     position: sticky;
     top: 0;
     z-index: 99;
-    /*hace que el buton de la imagen ,no se vea en el header */
+    
 }
 
-.Header-logo {
+.headerLogo {
     float: left;
-    /* Esta propiedad hace que el elemento .Header-logo se desplace hacia la izquierda dentro de su contenedor */
     height: inherit;
-    /*El elemento .Header-logo tendrá la misma altura que su contenedor padre .Header*/
 }
 
-.Header-logo-title {
-    margin: 5px;
-}
-
-.Header-logo-span {
-    color: rgb(0, 0, 96);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-}
-
-.Header-logo-span-link {
+.headerLogoTitle {
+    margin: var(--spacing-small);
     text-decoration: none;
-
+    color: white;
+    
+    
 }
 
-.Nav-ul {
+.headerLogoSpan {
+    color: var(--color-accent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.headerLogoSpanLink {
+    text-decoration: none;
+}
+
+
+.navUl {
     float: right;
     list-style: none;
-    padding: 0px;
-    margin: 0px;
-
-
+    padding: 0;
+    margin: 0;
+   
 }
 
-.Nav-ul-li {
+.navUlLi {
     float: left;
-
 }
 
-.Nav-ul-li-a {
+.navUlLiA {
     display: block;
-    padding: 14px 16px;
+    padding: var(--spacing-medium);
     font-size: 1.2rem;
+    list-style: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
-    width: 100%;
-    box-sizing: border-box;
     transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
-    /*para que se mas sueve cuendo quites el mouse*/
-
 }
 
-.Nav-ul-li-a:hover {
+.navUlLiA:hover {
     background-color: rgb(36, 114, 122);
-    padding: 9px;
+    padding: calc(var(--spacing-medium) - 0.5rem);
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /*Aqui se le da el efecto de sombra al hover*/
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .navUl {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navUl.active {
+        display: flex;
+    }
+
+    .navUlLi {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menuToggle {
+        display: block;
+        cursor: pointer;
+        padding: var(--spacing-small);
+        float: right;
+    }
 }
 
 .Div-h2 {
@@ -154,9 +183,9 @@
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     min-height: 80%;
-    color:#333;
-    
-   
+    color: #333;
+
+
     /*mantener siempre una altura de 80% del contenedor en el que se encuentra.*/
 
 
@@ -441,7 +470,7 @@ left:25px;
 }
 
 .Main-article-ul-li:hover {
-   
+
     box-shadow: 0 10px 10px rgba(19, 0, 159, 0.5);
     transition: 0.5s ease-in-out;
 }
@@ -465,19 +494,20 @@ left:25px;
 
 }
 
-.Article-a{
+.Article-a {
     text-decoration: none;
     font-size: 1rem;
     color: #0a3a39;
     margin: 10px;
     padding: 13px 20px;
     border-radius: 10px;
-    background-color:#0a3a39;
+    background-color: #0a3a39;
     color: white;
-    
-    
+
+
 }
-.Article-a:hover{
+
+.Article-a:hover {
     background-color: #072d2d;
     color: white;
     transform: scale(1.05);
@@ -524,7 +554,7 @@ left:25px;
     position: relative;
     /* para centrarlos */
     left: 2rem;
-    
+
 
 }
 
@@ -544,7 +574,7 @@ left:25px;
     margin: 30px;
     text-transform: uppercase;
     font-weight: 600;
-  
+
 }
 
 
@@ -1002,17 +1032,19 @@ left:25px;
     margin: 10px;
     display: inline-block;
     border: 1.5px solid #03005b;
-   
+
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', sans-serif;
 
 }
-.Section-input:hover{
+
+.Section-input:hover {
     background-color: rgb(176, 176, 176);
     transition: background-color 0.4s ease-in-out;
 }
+
 .Section-submit {
     font-size: 1.2rem;
     color: white;
@@ -1032,7 +1064,7 @@ left:25px;
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: 0.4s ease-in-out;
-   
+
 }
 
 
@@ -1274,8 +1306,8 @@ left:25px;
         flex-direction: column;
     }
 
-   
-   /* .Section-news{
+
+    /* .Section-news{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1285,9 +1317,9 @@ left:25px;
       
     }*/
 
-   
 
-    
+
+
 
     .Main-section--section {
         margin: 0;
@@ -1382,17 +1414,20 @@ left:25px;
         margin: 0;
 
     }
-    .Body-faq{
+
+    .Body-faq {
         width: 650px;
         padding: 0;
         margin: 0;
         height: 100vh;
     }
-    .Main-faq{
+
+    .Main-faq {
         height: 100%;
 
     }
-    .Container{
+
+    .Container {
         width: 100%;
         height: 100%;
         display: flex;
@@ -1402,14 +1437,15 @@ left:25px;
         padding: 10px;
         gap: 10px;
     }
-    .Main-about{
+
+    .Main-about {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100%;
         padding-left: 80px;
-       
+
     }
 
 
@@ -1537,7 +1573,8 @@ left:25px;
 
 
     }
-    .Section-news{
+
+    .Section-news {
         width: 100%;
         display: flex;
         flex-direction: column;
