@@ -34,7 +34,7 @@
 
 
 
-.header {
+.Header {
     background-color: var(--color-primary);
     color: white;
     height: 60px;
@@ -45,12 +45,12 @@
 
 }
 
-.headerLogo {
+.Header-wrapper{
     float: left;
     height: inherit;
 }
 
-.headerLogoTitle {
+.Header-logo-title {
     margin: var(--spacing-small);
     text-decoration: none;
     color: white;
@@ -58,7 +58,7 @@
 
 }
 
-.headerLogoSpan {
+.Header-span {
     color: var(--color-accent);
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -66,7 +66,7 @@
     list-style: none;
 }
 
-.headerLogoSpanLink {
+.HeaderLogoSpanLink {
     text-decoration: none;
     color: white;
 }
@@ -1097,7 +1097,7 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
-header.dark-mode {
+Header.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
