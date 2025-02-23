@@ -42,7 +42,7 @@
     position: sticky;
     top: 0;
     z-index: 99;
-    
+
 }
 
 .headerLogo {
@@ -54,19 +54,23 @@
     margin: var(--spacing-small);
     text-decoration: none;
     color: white;
-    
-    
+
+
 }
 
 .headerLogoSpan {
     color: var(--color-accent);
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 .headerLogoSpanLink {
     text-decoration: none;
+    color: white;
 }
+
 
 
 .navUl {
@@ -74,11 +78,15 @@
     list-style: none;
     padding: 0;
     margin: 0;
-   
+    text-decoration: none;
+    list-style: none;
+
 }
 
 .navUlLi {
     float: left;
+
+    list-style: none;
 }
 
 .navUlLiA {
@@ -87,6 +95,7 @@
     font-size: 1.2rem;
     list-style: none;
     text-decoration: none;
+    color: white;
     transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
 }
 
@@ -126,7 +135,7 @@
     text-align: center;
     margin: 20px 0;
     font-size: 2.8rem;
-   
+
     font-weight: 800;
 
 
@@ -136,7 +145,7 @@
     text-align: center;
     margin: 20px 0;
     font-size: 1.4rem;
-    
+
     font-weight: 600;
 
 }
@@ -433,7 +442,7 @@ left:25px;
 
 .Article-p {
     font-size: 1.4rem;
-    
+
     font-weight: 600;
     margin: 20px;
     text-align: center;
@@ -441,7 +450,7 @@ left:25px;
 
 .Main-article-h2 {
     font-size: 2.8rem;
-   
+
     font-weight: 800;
     margin: 20px;
 
@@ -542,7 +551,7 @@ left:25px;
 
 .Section-h2-advice {
     font-size: 2.8rem;
-    color: #0a3a39;
+   
     font-weight: 800;
     margin: 20px;
     text-align: center;
@@ -1088,6 +1097,14 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+header.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+footer.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
 
 /* Estilos para el botón */
 .container-btn-dark {
@@ -1106,7 +1123,7 @@ body.dark-mode {
 
 .container-btn-dark:hover {
     background-color: #333;
-    color: #fff;
+    color: #fff;
 }
 
 
@@ -1133,16 +1150,7 @@ body.dark-mode {
     cursor: pointer;
 }
 
-/*.Body {
-    background-color:  rgb(210, 255, 255);
-    
-}
-.Body.open {
-    background-color: #000000;
-    color: #fff;
 
-
-}*/
 
 
 
