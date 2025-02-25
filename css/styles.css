@@ -66,14 +66,14 @@
     list-style: none;
 }
 
-.HeaderLogoSpanLink {
+.Header-a {
     text-decoration: none;
     color: white;
 }
 
 
 
-.navUl {
+.Nav-ul {
     float: right;
     list-style: none;
     padding: 0;
@@ -83,13 +83,13 @@
 
 }
 
-.navUlLi {
+.Nav-li {
     float: left;
 
     list-style: none;
 }
 
-.navUlLiA {
+.Nav-a {
     display: block;
     padding: var(--spacing-medium);
     font-size: 1.2rem;
@@ -99,7 +99,7 @@
     transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
 }
 
-.navUlLiA:hover {
+.Nav-a:hover {
     background-color: rgb(36, 114, 122);
     padding: calc(var(--spacing-medium) - 0.5rem);
     border-radius: 5px;
