@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (body.classList.contains('dark-mode')) {
             body.classList.remove('dark-mode');
             localStorage.setItem('theme', 'light-mode');
-            themeToggleBtn.textContent = 'Modo Oscuro';
+            themeToggleBtn.textContent = '';
         } else {
             body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
-            themeToggleBtn.textContent = 'Modo Claro';
+            themeToggleBtn.textContent = '';
         }
     });
 });
