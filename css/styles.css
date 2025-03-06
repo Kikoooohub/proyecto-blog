@@ -28,7 +28,7 @@
     /*width: 100vw;*/
     transition: background-color 0.5s, color 0.3s;
     color: var(--color-text);
-
+height: 100vh;
 
 }
 
@@ -45,16 +45,16 @@
 
 }
 
-.Header-wrapper{
+.Header-wrapper {
     float: left;
     height: inherit;
+    padding: 5px;
 }
 
 .Header-logo-title {
     margin: var(--spacing-small);
     text-decoration: none;
     color: white;
-
 
 }
 
@@ -64,6 +64,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     text-decoration: none;
     list-style: none;
+
 }
 
 .Header-a {
@@ -84,9 +85,11 @@
 }
 
 .Nav-li {
-    float: left;
-
+    float: right;
     list-style: none;
+    margin: 0;
+
+
 }
 
 .Nav-a {
@@ -131,7 +134,7 @@
     }
 }
 
-.Div-h2 {
+.Wrapper-h2 {
     text-align: center;
     margin: 20px 0;
     font-size: 2.8rem;
@@ -141,7 +144,7 @@
 
 }
 
-.Div-p {
+.Wrapper-p {
     text-align: center;
     margin: 20px 0;
     font-size: 1.4rem;
@@ -163,7 +166,7 @@
     padding: 40px;
 }
 
-.Main-section-ul {
+.Main-ul {
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -171,7 +174,7 @@
 }
 
 
-.Main-section-ul-li {
+.Main-li {
     width: 26rem;
     max-width: 100%;
     list-style: none;
@@ -187,7 +190,7 @@
 
 }
 
-.Main-section-ul-li-a {
+.Main-a {
 
     display: block;
     background: #fff;
@@ -205,7 +208,7 @@
 
 }
 
-.Main-section-ul-li-a-img {
+.Main-img--imagen {
     max-width: 100%;
     aspect-ratio: 16/9;
     /*mantener siempre una proporción de 16:9, sin importar el tamaño del contenedor en el que se encuentre.*/
@@ -219,21 +222,24 @@
 
 }
 
-.Main-section-ul-li-a-p {
+.Main-p {
     /*position: relative;
 left:25px;
 */
     color: #0a3a39;
     padding: 8px 16px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 550;
     margin: 16px 0 18px;
-    background: #68D8D6;
+    background:var(--color-primary);
     width: fit-content;
     border-radius: 50px;
+    color: white;
+    
+    
 }
 
-.Main-section-ul-li-a-h2 {
+.Main-h2 {
     font-size: 1.19rem;
     color: #000;
     font-weight: 700;
@@ -251,25 +257,9 @@ left:25px;
     transform: rotate(-90deg);
 }*/
 
-.Main-section-ul-li-a-btn:hover {
-    background-color: #27848f;
-    color: #fff;
-    transition: background-color 0.2s ease;
-    /*Esto hace que cuando pases el mouse por encima que cambie el color del box de la flecha y  el color de la flecha */
-
-    /*height: 100%;
-    width: 100%;*/
 
 
-}
 
-.Main-section-h2 {
-    font-size: 2rem;
-    color: #0a3a39;
-    font-weight: 800;
-    margin: 20px;
-    float: left;
-}
 
 
 
@@ -285,7 +275,7 @@ left:25px;
 /*    BTN SIEMPRE INFORMADO   */
 /*----------------------------*/
 
-.Main-a-btn {
+.Main-btn {
     text-decoration: none;
     margin: 5rem;
     font-size: 1.2rem;
@@ -299,7 +289,7 @@ left:25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.Main-a-btn:hover {
+.Main-btn:hover {
 
     background-color: #0d5855;
     transition: background-color 0.3s ease-in-out;
@@ -538,27 +528,17 @@ left:25px;
 /*       Consejos Landing page        */
 /*------------------------------------*/
 
-.Section-advice {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    margin: 50px;
-    position: relative;
-    bottom: 43px;
 
-}
 
-.Section-h2-advice {
+.Main-h2--consejos {
     font-size: 2.8rem;
-   
     font-weight: 800;
     margin: 20px;
     text-align: center;
 
 }
 
-.Section-ul-advice {
+.Main-ul {
     text-align: center;
     list-style: none;
     display: flex;
@@ -571,7 +551,7 @@ left:25px;
 
 }
 
-.Section-ul-li-advice {
+.Main-li--consejos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -593,13 +573,15 @@ left:25px;
 
 
 
-.Section-ul-li-p-advice {
+.Main-p--consejos{
     text-transform: lowercase;
     margin: 10px;
     font-weight: 400;
     font-size: 1.2rem;
-    color: #072d2d;
+    color:var(--color-text);
     line-height: 1.5;
+    text-align: center;
+    background: none;
 
 
 }
@@ -1097,10 +1079,12 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 Header.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 footer.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -1182,6 +1166,7 @@ footer.dark-mode {
     color: #072d2d;
     border-radius: 5px;
     padding: 2px;
+    height: 100%;
 
 }
 
