@@ -135,7 +135,7 @@
 .Wrapper-p {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 
     font-weight: 600;
 
@@ -315,7 +315,7 @@ left:25px;
 
 
 /*--------------------------------------------*/
-/* redessociales.html y las otras 4 noticias */
+/*       Noticas dentro de Caroussel         */
 /*------------------------------------------*/
 
 
@@ -323,7 +323,7 @@ left:25px;
 
 
 .Main-section-h2--h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     /* border-bottom: 1px solid gray;*/
     color: #0a3a39;
     font-weight: 800;
@@ -334,7 +334,7 @@ left:25px;
 }
 
 .Main-h2--active {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     border-bottom: 2px solid #0a3a39;
     padding-bottom: 5px;
@@ -355,8 +355,7 @@ left:25px;
 
 
 .Main-img--active {
-    width: 150%;
-    max-width: 30em;
+max-width: 30rem;
     border-radius: 10px;
     object-fit: cover;
 
@@ -402,10 +401,16 @@ left:25px;
 }
 
 .Article-p {
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 500;
     margin: 20px;
     text-align: right;
+    color: var(--color-text);
+    text-align: center;
+    gap: 20px;
+}
+.Article-p--active{
+    font-weight: 600;
 }
 
 .Article-h2 {
@@ -414,7 +419,11 @@ left:25px;
     margin: 20px;
 
 }
-
+.Article-h3{
+    color: var(--color-text);
+    font-size:  2rem;
+    text-align: center;
+}
 .Article-ul {
     list-style: none;
     display: flex;
@@ -675,142 +684,6 @@ left:25px;
     position: relative;
     bottom: 20px;
 }
-
-
-
-
-
-/*-----------------------------------*/
-/*          Noticias                 */
-/*-----------------------------------*/
-.Body-news {
-    background-color: rgb(210, 255, 255);
-    height: 100vh;
-}
-
-
-
-.Main-news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 5rem;
-    padding: 40px;
-
-}
-
-.Main-h2-news {
-    font-size: 2.8rem;
-    color: #0a3a39;
-    font-weight: 800;
-    margin: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    font-family: 'Gill Sans', sans-serif;
-    font-weight: 900;
-    position: relative;
-    top: 1rem;
-    left: 3rem;
-
-
-
-
-}
-
-.Section-news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    margin: 70px;
-    position: relative;
-    left: 3rem;
-    top: 13rem;
-}
-
-.Ul-news {
-    list-style: none;
-    display: block;
-    padding: 30px;
-    margin: 45px;
-
-}
-
-.Li-news {
-    background-color: #f4f9fb;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(10, 19, 201, 0.5);
-    color: #0a3a39;
-    font-size: 1rem;
-    padding: 20px;
-    margin: 30px;
-    text-align: center;
-    width: 72%;
-    position: relative;
-    right: 20rem;
-    bottom: 10rem;
-
-
-}
-
-.Main-img-news {
-    width: 33rem;
-    height: 22rem;
-    border-radius: 10px;
-    margin: 30px;
-    box-shadow: 0 5px 10px rgba(0, 7, 148, 0.5);
-    padding: 20px;
-    position: relative;
-    left: 20rem;
-    bottom: 41rem;
-
-
-}
-
-.Main-h3-news {
-    text-align: center;
-    margin: 10px;
-}
-
-.Main-p-news {
-    text-align: center;
-    margin: 10px;
-}
-
-/*.Li-news--reverse {
-    position: relative;
-    left: 0rem;
-    bottom: 28rem;
-
-}
-
-.Img-reverse {
-    position: relative;
-    bottom: -1rem;
-    width: 17rem;
-    height: 13rem;
-    border-radius: 10px;
-}*/
-
-.Main-p-news {
-    margin: 10px;
-    color: #072d2d;
-    font-weight: 600;
-    text-align: center;
-
-}
-
-
-
-
-
-
-
-
 
 
 
