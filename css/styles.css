@@ -319,55 +319,106 @@ left:25px;
 /*------------------------------------------*/
 
 
-
-
-
-.Main-section-h2--h2 {
-    font-size: 3rem;
-    /* border-bottom: 1px solid gray;*/
-    color: #0a3a39;
-    font-weight: 800;
-    margin: 20px;
+.Main-ul--Publicaciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    position: relative;
-    left: 18rem;
+    
+    
 }
 
-.Main-h2--active {
+.Main-li--Publicaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    height: 45rem;
+    margin: 4em;
+    padding: 4em;
+    background: #f4f9fb;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    border: 2px solid #0a3a39;
+}
+
+
+
+.Main-h2--Publicaciones{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    color: var(--color-text);
+    position: relative;
+    left: 0.5em;
+
+  
+}
+
+.Main-h2--Publicaciones {
     font-size: 3rem;
     font-weight: 800;
     border-bottom: 2px solid #0a3a39;
-    padding-bottom: 5px;
-    margin: 20px;
+    
+    
 
-}
-
-.Main--active {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 
 }
 
 
-
-
-
-.Main-img--active {
-max-width: 30rem;
-    border-radius: 10px;
+.Main-img--Publicaciones{
+max-width: 35rem;
+    border-radius: 20px;
     object-fit: cover;
+  
 
 }
-
-.Main-p--active {
+.Main-p--Publicaciones{
+    margin: 14px;
+    text-align: center;
+    background-color: #f4f9fb;
+    color: var(--color-text);
     font-size: 1.1rem;
-    margin: 20px;
-    padding: 20px;
-    color: #fff;
-    background-color: #0a3a39;
+    
+    
 }
+
+.Main-img--Finanzas{
+   height: 25rem;
+   border-radius: 10px;
+    width: 70%;
+  
+
+}
+.Main-img--Oportunidades{
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 25rem;
+    
+}
+.Main-img--Vapers{
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 25rem;
+   
+
+}
+.Main-img--Relaciones{
+    max-width: 35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 25rem;
+}
+
+
 
 
 
