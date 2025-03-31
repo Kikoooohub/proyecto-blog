@@ -45,23 +45,23 @@
     </header>
 
     <main>
-        <section class="Main-section-contacto">
-            <h2 class="Main-section-contacto-h2">Quieres recibir notificaciones sobre nuestras noticias?</h2>
+        <section class="Main-section Main-section--contacto">
+            <h2 class="Main-h2 Main-h2--contacto">Quieres recibir notificaciones sobre nuestras noticias?</h2>
 
             <h2>Dejanos tu email:</h2>
 
-            <form class="Section-form" action="https://formspree.io/f/" enctype="multipart/form-data" method="POST">
-                <label class="Section-label" for="name">Nombre:</label>
-                <input class="Section-input" type="text" id="name" name="name" required>
-                <label class="Section-label" for="email">Email:</label>
-                <input class="Section-input" type="email" id="email" name="email" required>
-                <input class="Section-submit" type="submit" value="Enviar">
+            <form class="Main-form" action="https://formspree.io/f/" method="POST">
+                <label class="Main-label" for="name">Nombre:</label>
+                <input class="Main-input" type="text" id="name" name="name" required>
+                <label class="Main-label" for="email">Email:</label>
+                <input class="Main-input" type="email" id="email" name="email" required>
+                <input class="Main-input--isActive" type="submit" value="Enviar">
 
             </form>
 
         </section>
         <div class="Container-dark">
-            <button class="container-btn-dark"><i class="fa-solid fa-moon" id="theme-toggle"></i></button>
+            <button class="Container-btn"><i class="fa-solid fa-moon" id="theme-toggle"></i></button>
         </div>
     </main>
 
