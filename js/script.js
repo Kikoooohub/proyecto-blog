@@ -1,5 +1,7 @@
 
 
+//Acordeon
+
 // Declaro las varibales
 const preguntas = document.querySelectorAll('.Container-pregunta');
 
@@ -29,6 +31,11 @@ preguntas.forEach(pregunta => {
 
 
 
+
+
+
+
+// Button Dark mode
 document.addEventListener('DOMContentLoaded', (event) => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
@@ -58,41 +65,59 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".Main-ul");
-    const slides = document.querySelectorAll(".Main-li");
-    const totalSlides = slides.length;
-    let currentIndex = 0;
 
-    // Clone first slide and append it to the end for seamless transition
-    const firstClone = slides[0].cloneNode(true);
-    carousel.appendChild(firstClone);
+
+
+//Carousel Slider
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector("#news-carousel");
+    if (!carousel) return;
+
+    let slides = carousel.querySelectorAll(".Main-li");
+    let interval;
+
+    function highlightCenterSlide() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove("active-slide"); // Quita la clase de todos
+            slide.classList.add("inactive-slide"); // Agrega la clase de opacidad a todos
+        });
+        slides[2].classList.add("active-slide"); // Hace que el del centro destaque
+        slides[2].classList.remove("inactive-slide"); // Quita la opacidad al central
+    }
 
     function moveCarousel() {
-        currentIndex++;
-        carousel.style.transition = "transform 0.8s ease-in-out";
-        carousel.style.transform = `translateX(${-currentIndex * slides[0].offsetWidth}px)`;
-        
-        // Reset transition for seamless looping
-        if (currentIndex === totalSlides) {
-            setTimeout(() => {
-                carousel.style.transition = "none";
-                carousel.style.transform = "translateX(0px)";
-                currentIndex = 0;
-            }, 800);
-        }
+        carousel.style.transition = "transform 1s ease-in-out";
+        carousel.style.transform = `translateX(${-slides[0].offsetWidth}px)`;
+
+        setTimeout(() => {
+            let firstSlide = carousel.firstElementChild;
+            carousel.appendChild(firstSlide);
+            carousel.style.transition = "ease-in-out 1s";
+            carousel.style.transform = "translateX(0)";
+            slides = carousel.querySelectorAll(".Main-li"); // Reasigna los slides
+            highlightCenterSlide(); // Destacar el nuevo slide central
+        }, 800);
     }
 
     function startCarousel() {
-        setInterval(moveCarousel, 4000); // Change slide every 4 seconds
+        clearInterval(interval);
+        interval = setInterval(moveCarousel, 4000);
     }
 
-    // Initial styles for smooth transition
-    carousel.style.display = "flex";
-    carousel.style.transition = "transform 0.8s ease-in-out";
+    // Detener el carrusel al pasar el mouse
+    carousel.addEventListener("mouseenter", () => clearInterval(interval));
+    carousel.addEventListener("mouseleave", startCarousel);
 
+    // Estilos iniciales
+    carousel.style.display = "flex";
+    carousel.style.overflow = "visible";
+
+    highlightCenterSlide();
     startCarousel();
 });
+
+
 
 
 

@@ -57,7 +57,7 @@
     <main>
         <!--Primera seccion-->
         <section class="Main-section">
-            <ul class="Main-ul">
+            <ul class="Main-ul" id="news-carousel">
                 <li class="Main-li">
                     <a href="redes-sociales.html" class="Main-a"><i class="fa-solid fa-right-to-bracket"></i>
                         <img src="./img/instagramimg.webp" alt="social media" class="Main-img Main-img--main">
@@ -201,6 +201,29 @@
                 </li>
             </ul>
         </section>
+
+
+
+        <section class="Main-section">
+            <h2 class="Main-h2 Main-h2--formulario">Aquí puedes dar tu opinión sobre algo que te interese, motive o simplemente quieras comentar</h2>
+            <form id="comment-form" class="Main-form">
+                <label class="Main-label" for="user-name">Tu nombre:</label>
+                <input  class="Main-input" type="text" id="user-name" name="user-name" placeholder="Escribe tu nombre" required>
+        
+                <label class="Main-label" for="user-email">Tu correo (opcional):</label>
+                <input class="Main-input" type="email" id="user-email" name="user-email" placeholder="Escribe tu correo (opcional)">
+
+                <label class="Main-label" for="user-age">Fecha de Nacimiento:</label>
+                <input class="Main-input" type="age" id="age" name="age" placeholder="Ej: 2000-01-01" required>
+        
+                <label class="Main-label" for="comment-text">Tu comentario:</label>
+                <textarea id="comment-text" name="comment-text" placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+        
+                <button type="submit" class="Main-btn Main-btn--formulario">Enviar Comentario</button>
+            </form>
+            <div id="comment-messages"></div>
+        </section>
+        
 
         <div class="Container-dark">
             <button class="Container-btn"><i class="fa-solid fa-moon" id="theme-toggle"></i></button>
