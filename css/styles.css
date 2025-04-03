@@ -318,51 +318,7 @@ left:25px;
 }
 
 
-.Main-select{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #03005b;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin: 10px 0;
-    box-sizing: border-box;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    color: #0a3a39;
-}
-.Main-option{
-    
-    color: #f4f9fb;
-    padding: 20px;
-    border-radius: 2px;
-    margin: 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid #f4f9fb;
-    
-}
 
-.Main-textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #03005b;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin: 10px 0;
-    box-sizing: border-box;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    color: #0a3a39;
-    resize: vertical;
-}
-
-.Main-option--isActive{
-    background-color:var(--color-primary);
-    border-bottom: 3px solid #f4f9fb;
-    
-
-}
 
 
 
@@ -673,14 +629,75 @@ left:25px;
     margin: 20px;
 }
 
-.Main-btn--formulario {}
+.Btn {
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 5rem;
+    background-color: var(--color-accent);
+    border-radius: 20px;
+    border-color:none;
+    padding: 15px;
+    cursor: pointer;   
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Btn:hover {
+    background-color: #0d5855;
+    transition: background-color 0.3s ease-in-out;
+    
+}
 
 
 
 
 
 
+.Main-select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #03005b;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color:darkgrey;
+}
+.Main-option{
+    
+    color: #f4f9fb;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #f4f9fb;
+    
+}
 
+.Main-textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #03005b;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: var(--color-accent);
+    resize: vertical;
+}
+
+.Main-option--isActive{
+    background-color:var(--color-accent);
+    border-bottom: 3px solid #f4f9fb;
+    
+
+}
 
 
 
