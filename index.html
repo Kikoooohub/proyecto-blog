@@ -205,25 +205,45 @@
 
 
         <section class="Main-section">
-            <h2 class="Main-h2 Main-h2--formulario">Aquí puedes dar tu opinión sobre algo que te interese, motive o simplemente quieras comentar</h2>
+            <h2 class="Main-h2 Main-h2--formulario">Deseas dejar un comentario sobre algun tema que te llamo la atencion?
+            </h2>
             <form id="comment-form" class="Main-form">
                 <label class="Main-label" for="user-name">Tu nombre:</label>
-                <input  class="Main-input" type="text" id="user-name" name="user-name" placeholder="Escribe tu nombre" required>
-        
+                <input class="Main-input" type="text" id="user-name" name="user-name" placeholder="Escribe tu nombre"
+                    required>
+
                 <label class="Main-label" for="user-email">Tu correo (opcional):</label>
-                <input class="Main-input" type="email" id="user-email" name="user-email" placeholder="Escribe tu correo (opcional)">
+                <input class="Main-input" type="email" id="user-email" name="user-email"
+                    placeholder="Escribe tu correo (opcional)">
 
                 <label class="Main-label" for="user-age">Fecha de Nacimiento:</label>
-                <input class="Main-input" type="age" id="age" name="age" placeholder="Ej: 2000-01-01" required>
-        
+                <input class="Main-input" type="date" id="date" name="date" placeholder="Fecha de Nacimiento" required>
+
+                <label class="Main-label" for="topic-news">Elige el tema:</label>
+                <select class="Main-select" name="topic" id="topic" required>
+                    <option class="Main-option Main-option--isActive" value="select" disabled selected>Selecciona un tema</option>
+                    <option  class="Main-option" value="IA">Inteligencia Artificial(IA)</option>
+                    <option  class="Main-option" value="sport">Deporte</option>
+                    <option  class="Main-option" value="salud">Salud</option>
+                    <option  class="Main-option" value="finanz">Finanzas</option>
+                    <option  class="Main-option" value="relacion">Relaciones</option>
+                    <option  class="Main-option" value="politica">Política</option>
+                    <option  class="Main-option" value="tecn">Tecnología</option>
+                    <option  class="Main-option" value="redes">Redes Sociales</option>
+                    <option  class="Main-option" value="oport">Oportunidades</option>
+                    <option  class="Main-option" value="otro">Otro</option>
+                    
+                </select>
+
                 <label class="Main-label" for="comment-text">Tu comentario:</label>
-                <textarea id="comment-text" name="comment-text" placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
-        
+                <textarea class="Main-textarea" id="comment-text" name="comment-text" placeholder="Escribe tu comentario aquí..." rows="5"
+                    required></textarea>
+
                 <button type="submit" class="Main-btn Main-btn--formulario">Enviar Comentario</button>
             </form>
-            <div id="comment-messages"></div>
+
         </section>
-        
+
 
         <div class="Container-dark">
             <button class="Container-btn"><i class="fa-solid fa-moon" id="theme-toggle"></i></button>
