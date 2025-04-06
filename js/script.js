@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
             themeToggleBtn.textContent = '';
-        }
-    });
+        }
+    });
 });
 
 
