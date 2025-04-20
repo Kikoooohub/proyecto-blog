@@ -682,8 +682,8 @@ left:25px;
     margin: 10px 0;
     box-sizing: border-box;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    color: var(--color-accent);
     resize: vertical;
+
 }
 
 .Main-option--isActive {
@@ -1514,17 +1514,17 @@ main.dark-mode {
 
 
 
+
     .Header {
         height: 60px;
         padding: var(--spacing-small) 20px;
         width: 100%;
+
     }
 
     .Nav-ul,
     .Nav-li {
-        float: none;
-        display: flex;
-        justify-content: flex-end;
+        float: right;
         gap: 10px;
     }
 
@@ -1542,11 +1542,7 @@ main.dark-mode {
     }
 
     .Main-section {
-        padding: 30px 20px;
         gap: 24px;
-
-
-
 
     }
 
@@ -1682,73 +1678,78 @@ main.dark-mode {
     }
 
     .Main--acerca-de,
-    .Main-section--contacto,
-    .Main-section--faq {
-        margin: 40px;
-        padding: 40px;
-    }
+    .Main-section--contacto
+    {
+    margin: 40px;
+    padding: 40px;
+}
 
-    .Main-ul--acerca-de {
-        width: 90%;
-    }
+.Main-section--faq {
+    padding: 40px;
 
-    .Main-li--acerca-de {
-        width: 80%;
-        font-size: 1.4rem;
-        padding: 25px;
-    }
+}
 
-    .Main-p--acerca-de {
-        font-size: 1.1rem;
-        padding: 35px;
-    }
+.Main-ul--acerca-de {
+    width: 90%;
+}
 
-    .Main-figure {
-        width: 50%;
-        height: auto;
-    }
+.Main-li--acerca-de {
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 25px;
+}
 
-    .Container {
-        width: 90%;
-        max-height: none;
-    }
+.Main-p--acerca-de {
+    font-size: 1.1rem;
+    padding: 35px;
+}
 
-    .Container-pregunta {
-        font-size: 1.5rem;
-    }
+.Main-figure {
+    width: 50%;
+    height: auto;
+}
 
-    .Container-respuesta {
-        font-size: 1.1rem;
-        min-width: 600px;
-    }
+.Container {
+    width: 90%;
+    max-height: none;
+}
 
-    .Footer {
-        padding: 22px;
-    }
+.Container-pregunta {
+    font-size: 1.5rem;
+}
 
-    .Footer-h2 {
-        font-size: 1.6rem;
-        padding: 6px;
-    }
+.Container-respuesta {
+    font-size: 1.1rem;
+    min-width: 600px;
+}
 
-    .Footer-section {
-        margin: 12px;
-        padding: 12px;
-        gap: 6px;
-    }
+.Footer {
+    padding: 22px;
+}
 
-    .Footer-ul {
-        gap: 12px;
-    }
+.Footer-h2 {
+    font-size: 1.6rem;
+    padding: 6px;
+}
 
-    .Footer-li {
-        margin: 8px;
-        font-size: 1.1rem;
-    }
+.Footer-section {
+    margin: 12px;
+    padding: 12px;
+    gap: 6px;
+}
 
-    .Footer-a {
-        font-size: 1.3rem;
-    }
+.Footer-ul {
+    gap: 12px;
+}
+
+.Footer-li {
+    margin: 8px;
+    font-size: 1.1rem;
+}
+
+.Footer-a {
+    font-size: 1.3rem;
+}
 
 }
 
@@ -1779,6 +1780,7 @@ main.dark-mode {
     .Nav-li {
         float: none;
         text-align: center;
+        border: 1px solid #fff
     }
 
     .Main-section {
@@ -1808,7 +1810,6 @@ main.dark-mode {
         width: fit-content;
     }
 
-    @media (max-width: 768px) {}
 
     .Main-ul--publicaciones {
         flex-direction: column;
@@ -1945,11 +1946,6 @@ main.dark-mode {
         padding: 30px;
     }
 
-    .Main-figure {
-        width: 100%;
-        height: auto;
-        border-radius: 15%;
-    }
 
     /* FAQ / Acordeon */
     .Main-section--faq {
@@ -2033,7 +2029,7 @@ main.dark-mode {
     }
 
     .Main-figure {
-        width: 90%;
+        width: 70%;
         height: auto;
         border-radius: 10%;
         margin: 15px;
@@ -2048,6 +2044,7 @@ main.dark-mode {
         font-size: 1rem;
         margin: 1rem;
         padding: 10px;
+        text-align: center;
     }
 
     .Container {
@@ -2097,11 +2094,6 @@ main.dark-mode {
     .Container-respuesta {
         min-width: 100%;
         font-size: 1rem;
-    }
-
-    .Main-figure {
-        width: 100%;
-        height: auto;
     }
 
     .Main-section--contacto {
